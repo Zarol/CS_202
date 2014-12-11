@@ -1,0 +1,57 @@
+#include "Card.h"
+
+using namespace std;
+
+Card::Card()
+{
+	suit = "suit";
+	rank = 0;
+	location = "location";
+}
+
+Card::Card(string newSuit, int newRank, string newLocation)
+{
+	suit = newSuit;
+	rank = newRank;
+	location = newLocation;
+}
+
+Card::Card(const Card& newCard)
+{
+	suit = newCard.suit;
+	rank = newCard.rank;
+	location = newCard.location;
+}
+
+Card::~Card()
+{
+}
+
+bool Card::setSuit(string newSuit)
+{
+	suit = newSuit;
+	return true;
+}
+
+string Card::getSuit() const
+{
+	return suit;
+}
+
+bool Card::setRank(int newRank)
+{
+	if(newRank > 0 && newRank < 14)
+	{
+		rank = newRank;
+		return true;
+	}
+	else
+		return false;
+}
+
+int Card::getRank() const
+{
+	return rank;
+}
+
+

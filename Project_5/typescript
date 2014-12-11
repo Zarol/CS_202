@@ -1,0 +1,551 @@
+Script started on Wed 26 Feb 2014 02:57:40 PM PST
+]0;zarol@zarol: ~/Desktop/Project_5zarol@zarol:~/Desktop/Project_5$ make
+g++ -c Project5.cpp
+g++ -c strLib.cpp
+g++ -o Project5.exe Project5.o strLib.o
+]0;zarol@zarol: ~/Desktop/Project_5zarol@zarol:~/Desktop/Project_5$ ./Project5.exe
+Please enter the unshuffled deck's file name (100 MAX):
+unshuffled
+How many players wish to play (2-8)?:
+8
+Please enter the list of player's file name (100 MAX):
+pal  lae yers
+--- Functions have been pre-run to initialize outputs (Shuffled & Dealt). ---
+*************************************
+*           CRAZY EIGHTS            *
+*************************************
+* 'U' to print the unshuffled deck. *
+* 'S' to print the shuffled deck.   *
+* 'O' to print the stock deck.      *
+* 'D' to print the discard deck.    *
+* 'P' to print the players.         *
+* 'H' to print the player's hands.  *
+* 'Q' to quit.                      *
+*************************************
+u
+*************************************
+1 club (unshuffled)
+2 club (unshuffled)
+3 club (unshuffled)
+4 club (unshuffled)
+5 club (unshuffled)
+6 club (unshuffled)
+7 club (unshuffled)
+8 club (unshuffled)
+9 club (unshuffled)
+10 club (unshuffled)
+11 club (unshuffled)
+12 club (unshuffled)
+13 club (unshuffled)
+1 diamond (unshuffled)
+2 diamond (unshuffled)
+3 diamond (unshuffled)
+4 diamond (unshuffled)
+5 diamond (unshuffled)
+6 diamond (unshuffled)
+7 diamond (unshuffled)
+8 diamond (unshuffled)
+9 diamond (unshuffled)
+10 diamond (unshuffled)
+11 diamond (unshuffled)
+12 diamond (unshuffled)
+13 diamond (unshuffled)
+1 heart (unshuffled)
+2 heart (unshuffled)
+3 heart (unshuffled)
+4 heart (unshuffled)
+5 heart (unshuffled)
+6 heart (unshuffled)
+7 heart (unshuffled)
+8 heart (unshuffled)
+9 heart (unshuffled)
+10 heart (unshuffled)
+11 heart (unshuffled)
+12 heart (unshuffled)
+13 heart (unshuffled)
+1 ace (unshuffled)
+2 ace (unshuffled)
+3 ace (unshuffled)
+4 ace (unshuffled)
+5 ace (unshuffled)
+6 ace (unshuffled)
+7 ace (unshuffled)
+8 ace (unshuffled)
+9 ace (unshuffled)
+10 ace (unshuffled)
+11 ace (unshuffled)
+12 ace (unshuffled)
+13 ace (unshuffled)
+*************************************
+*           CRAZY EIGHTS            *
+*************************************
+* 'U' to print the unshuffled deck. *
+* 'S' to print the shuffled deck.   *
+* 'O' to print the stock deck.      *
+* 'D' to print the discard deck.    *
+* 'P' to print the players.         *
+* 'H' to print the player's hands.  *
+* 'Q' to quit.                      *
+*************************************
+s
+*************************************
+9 diamond (shuffled)
+13 ace (shuffled)
+3 ace (shuffled)
+3 club (shuffled)
+8 heart (shuffled)
+4 heart (shuffled)
+1 ace (shuffled)
+8 diamond (shuffled)
+9 heart (shuffled)
+4 club (shuffled)
+8 club (shuffled)
+13 club (shuffled)
+2 heart (shuffled)
+1 diamond (shuffled)
+3 diamond (shuffled)
+10 ace (shuffled)
+5 ace (shuffled)
+4 ace (shuffled)
+2 club (shuffled)
+3 heart (shuffled)
+6 heart (shuffled)
+5 diamond (shuffled)
+7 diamond (shuffled)
+7 heart (shuffled)
+6 club (shuffled)
+10 heart (shuffled)
+6 diamond (shuffled)
+9 ace (shuffled)
+12 heart (shuffled)
+11 heart (shuffled)
+12 ace (shuffled)
+8 ace (shuffled)
+11 diamond (shuffled)
+1 heart (shuffled)
+6 ace (shuffled)
+2 diamond (shuffled)
+10 club (shuffled)
+1 club (shuffled)
+13 heart (shuffled)
+5 club (shuffled)
+7 ace (shuffled)
+13 diamond (shuffled)
+5 heart (shuffled)
+11 club (shuffled)
+11 ace (shuffled)
+4 diamond (shuffled)
+9 club (shuffled)
+7 club (shuffled)
+10 diamond (shuffled)
+12 club (shuffled)
+2 ace (shuffled)
+12 diamond (shuffled)
+*************************************
+*           CRAZY EIGHTS            *
+*************************************
+* 'U' to print the unshuffled deck. *
+* 'S' to print the shuffled deck.   *
+* 'O' to print the stock deck.      *
+* 'D' to print the discard deck.    *
+* 'P' to print the players.         *
+* 'H' to print the player's hands.  *
+* 'Q' to quit.                      *
+*************************************
+h
+*************************************
+Saharath
+9 diamond (Saharath)
+9 heart (Saharath)
+5 ace (Saharath)
+6 club (Saharath)
+11 diamond (Saharath)
+Nancy
+13 ace (Nancy)
+4 club (Nancy)
+4 ace (Nancy)
+10 heart (Nancy)
+1 heart (Nancy)
+Mohammad
+3 ace (Mohammad)
+8 club (Mohammad)
+2 club (Mohammad)
+6 diamond (Mohammad)
+6 ace (Mohammad)
+Shubham
+3 club (Shubham)
+13 club (Shubham)
+3 heart (Shubham)
+9 ace (Shubham)
+2 diamond (Shubham)
+Ernest
+8 heart (Ernest)
+2 heart (Ernest)
+6 heart (Ernest)
+12 heart (Ernest)
+10 club (Ernest)
+Tyler
+4 heart (Tyler)
+1 diamond (Tyler)
+5 diamond (Tyler)
+11 heart (Tyler)
+1 club (Tyler)
+Adam
+1 ace (Adam)
+3 diamond (Adam)
+7 diamond (Adam)
+12 ace (Adam)
+13 heart (Adam)
+Charlie
+8 diamond (Charlie)
+10 ace (Charlie)
+7 heart (Charlie)
+8 ace (Charlie)
+5 club (Charlie)
+*************************************
+*           CRAZY EIGHTS            *
+*************************************
+* 'U' to print the unshuffled deck. *
+* 'S' to print the shuffled deck.   *
+* 'O' to print the stock deck.      *
+* 'D' to print the discard deck.    *
+* 'P' to print the players.         *
+* 'H' to print the player's hands.  *
+* 'Q' to quit.                      *
+*************************************
+o
+*************************************
+13 diamond (stock)
+5 heart (stock)
+11 club (stock)
+11 ace (stock)
+4 diamond (stock)
+9 club (stock)
+7 club (stock)
+10 diamond (stock)
+12 club (stock)
+2 ace (stock)
+12 diamond (stock)
+*************************************
+*           CRAZY EIGHTS            *
+*************************************
+* 'U' to print the unshuffled deck. *
+* 'S' to print the shuffled deck.   *
+* 'O' to print the stock deck.      *
+* 'D' to print the discard deck.    *
+* 'P' to print the players.         *
+* 'H' to print the player's hands.  *
+* 'Q' to quit.                      *
+*************************************
+d
+*************************************
+7 ace (discard)
+*************************************
+*           CRAZY EIGHTS            *
+*************************************
+* 'U' to print the unshuffled deck. *
+* 'S' to print the shuffled deck.   *
+* 'O' to print the stock deck.      *
+* 'D' to print the discard deck.    *
+* 'P' to print the players.         *
+* 'H' to print the player's hands.  *
+* 'Q' to quit.                      *
+*************************************
+p
+*************************************
+Saharath (99999)
+Nancy (12345)
+Mohammad (67891)
+Shubham (55555)
+Ernest (13579)
+Tyler (92229)
+Adam (14414)
+Charlie (87452)
+*************************************
+*           CRAZY EIGHTS            *
+*************************************
+* 'U' to print the unshuffled deck. *
+* 'S' to print the shuffled deck.   *
+* 'O' to print the stock deck.      *
+* 'D' to print the discard deck.    *
+* 'P' to print the players.         *
+* 'H' to print the player's hands.  *
+* 'Q' to quit.                      *
+*************************************
+q
+*************************************
+Goodbye!
+]0;zarol@zarol: ~/Desktop/Project_5zarol@zarol:~/Desktop/Project_5$ ./Project5.exe
+Please enter the unshuffled deck's file name (100 MAX):
+unshuffled
+How many players wish to play (2-8)?:
+9
+How many players wish to play (2-8)?:
+1
+How many players wish to play (2-8)?:
+5
+Please enter the list of player's file name (100 MAX):
+players
+--- Functions have been pre-run to initialize outputs (Shuffled & Dealt). ---
+*************************************
+*           CRAZY EIGHTS            *
+*************************************
+* 'U' to print the unshuffled deck. *
+* 'S' to print the shuffled deck.   *
+* 'O' to print the stock deck.      *
+* 'D' to print the discard deck.    *
+* 'P' to print the players.         *
+* 'H' to print the player's hands.  *
+* 'Q' to quit.                      *
+*************************************
+u
+*************************************
+1 club (unshuffled)
+2 club (unshuffled)
+3 club (unshuffled)
+4 club (unshuffled)
+5 club (unshuffled)
+6 club (unshuffled)
+7 club (unshuffled)
+8 club (unshuffled)
+9 club (unshuffled)
+10 club (unshuffled)
+11 club (unshuffled)
+12 club (unshuffled)
+13 club (unshuffled)
+1 diamond (unshuffled)
+2 diamond (unshuffled)
+3 diamond (unshuffled)
+4 diamond (unshuffled)
+5 diamond (unshuffled)
+6 diamond (unshuffled)
+7 diamond (unshuffled)
+8 diamond (unshuffled)
+9 diamond (unshuffled)
+10 diamond (unshuffled)
+11 diamond (unshuffled)
+12 diamond (unshuffled)
+13 diamond (unshuffled)
+1 heart (unshuffled)
+2 heart (unshuffled)
+3 heart (unshuffled)
+4 heart (unshuffled)
+5 heart (unshuffled)
+6 heart (unshuffled)
+7 heart (unshuffled)
+8 heart (unshuffled)
+9 heart (unshuffled)
+10 heart (unshuffled)
+11 heart (unshuffled)
+12 heart (unshuffled)
+13 heart (unshuffled)
+1 ace (unshuffled)
+2 ace (unshuffled)
+3 ace (unshuffled)
+4 ace (unshuffled)
+5 ace (unshuffled)
+6 ace (unshuffled)
+7 ace (unshuffled)
+8 ace (unshuffled)
+9 ace (unshuffled)
+10 ace (unshuffled)
+11 ace (unshuffled)
+12 ace (unshuffled)
+13 ace (unshuffled)
+*************************************
+*           CRAZY EIGHTS            *
+*************************************
+* 'U' to print the unshuffled deck. *
+* 'S' to print the shuffled deck.   *
+* 'O' to print the stock deck.      *
+* 'D' to print the discard deck.    *
+* 'P' to print the players.         *
+* 'H' to print the player's hands.  *
+* 'Q' to quit.                      *
+*************************************
+s
+*************************************
+10 club (shuffled)
+4 ace (shuffled)
+13 club (shuffled)
+5 diamond (shuffled)
+1 heart (shuffled)
+11 ace (shuffled)
+8 ace (shuffled)
+3 ace (shuffled)
+13 ace (shuffled)
+12 diamond (shuffled)
+11 heart (shuffled)
+1 club (shuffled)
+7 diamond (shuffled)
+13 heart (shuffled)
+7 club (shuffled)
+4 club (shuffled)
+1 ace (shuffled)
+3 diamond (shuffled)
+3 club (shuffled)
+8 diamond (shuffled)
+6 club (shuffled)
+9 heart (shuffled)
+2 diamond (shuffled)
+12 club (shuffled)
+11 club (shuffled)
+7 heart (shuffled)
+9 ace (shuffled)
+6 heart (shuffled)
+4 heart (shuffled)
+2 ace (shuffled)
+5 club (shuffled)
+9 diamond (shuffled)
+11 diamond (shuffled)
+5 heart (shuffled)
+10 heart (shuffled)
+1 diamond (shuffled)
+2 club (shuffled)
+6 diamond (shuffled)
+12 heart (shuffled)
+12 ace (shuffled)
+7 ace (shuffled)
+10 diamond (shuffled)
+3 heart (shuffled)
+2 heart (shuffled)
+8 heart (shuffled)
+5 ace (shuffled)
+13 diamond (shuffled)
+8 club (shuffled)
+9 club (shuffled)
+10 ace (shuffled)
+4 diamond (shuffled)
+6 ace (shuffled)
+*************************************
+*           CRAZY EIGHTS            *
+*************************************
+* 'U' to print the unshuffled deck. *
+* 'S' to print the shuffled deck.   *
+* 'O' to print the stock deck.      *
+* 'D' to print the discard deck.    *
+* 'P' to print the players.         *
+* 'H' to print the player's hands.  *
+* 'Q' to quit.                      *
+*************************************
+o
+*************************************
+9 ace (stock)
+6 heart (stock)
+4 heart (stock)
+2 ace (stock)
+5 club (stock)
+9 diamond (stock)
+11 diamond (stock)
+5 heart (stock)
+10 heart (stock)
+1 diamond (stock)
+2 club (stock)
+6 diamond (stock)
+12 heart (stock)
+12 ace (stock)
+7 ace (stock)
+10 diamond (stock)
+3 heart (stock)
+2 heart (stock)
+8 heart (stock)
+5 ace (stock)
+13 diamond (stock)
+8 club (stock)
+9 club (stock)
+10 ace (stock)
+4 diamond (stock)
+6 ace (stock)
+*************************************
+*           CRAZY EIGHTS            *
+*************************************
+* 'U' to print the unshuffled deck. *
+* 'S' to print the shuffled deck.   *
+* 'O' to print the stock deck.      *
+* 'D' to print the discard deck.    *
+* 'P' to print the players.         *
+* 'H' to print the player's hands.  *
+* 'Q' to quit.                      *
+*************************************
+d
+*************************************
+7 heart (discard)
+*************************************
+*           CRAZY EIGHTS            *
+*************************************
+* 'U' to print the unshuffled deck. *
+* 'S' to print the shuffled deck.   *
+* 'O' to print the stock deck.      *
+* 'D' to print the discard deck.    *
+* 'P' to print the players.         *
+* 'H' to print the player's hands.  *
+* 'Q' to quit.                      *
+*************************************
+p
+*************************************
+Saharath (99999)
+Nancy (12345)
+Mohammad (67891)
+Shubham (55555)
+Ernest (13579)
+*************************************
+*           CRAZY EIGHTS            *
+*************************************
+* 'U' to print the unshuffled deck. *
+* 'S' to print the shuffled deck.   *
+* 'O' to print the stock deck.      *
+* 'D' to print the discard deck.    *
+* 'P' to print the players.         *
+* 'H' to print the player's hands.  *
+* 'Q' to quit.                      *
+*************************************
+h
+*************************************
+Saharath
+10 club (Saharath)
+11 ace (Saharath)
+11 heart (Saharath)
+4 club (Saharath)
+6 club (Saharath)
+Nancy
+4 ace (Nancy)
+8 ace (Nancy)
+1 club (Nancy)
+1 ace (Nancy)
+9 heart (Nancy)
+Mohammad
+13 club (Mohammad)
+3 ace (Mohammad)
+7 diamond (Mohammad)
+3 diamond (Mohammad)
+2 diamond (Mohammad)
+Shubham
+5 diamond (Shubham)
+13 ace (Shubham)
+13 heart (Shubham)
+3 club (Shubham)
+12 club (Shubham)
+Ernest
+1 heart (Ernest)
+12 diamond (Ernest)
+7 club (Ernest)
+8 diamond (Ernest)
+11 club (Ernest)
+*************************************
+*           CRAZY EIGHTS            *
+*************************************
+* 'U' to print the unshuffled deck. *
+* 'S' to print the shuffled deck.   *
+* 'O' to print the stock deck.      *
+* 'D' to print the discard deck.    *
+* 'P' to print the players.         *
+* 'H' to print the player's hands.  *
+* 'Q' to quit.                      *
+*************************************
+q
+*************************************
+Goodbye!
+]0;zarol@zarol: ~/Desktop/Project_5zarol@zarol:~/Desktop/Project_5$ exit
+exit
+
+Script done on Wed 26 Feb 2014 02:58:49 PM PST

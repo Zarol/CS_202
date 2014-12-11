@@ -1,0 +1,121 @@
+Script started on Wed 30 Apr 2014 08:07:51 PM PDT
+]0;skleips@ecc-a-16vm: ~/Desktop/Project_12skleips@ecc-a-16vm:~/Desktop/Project_12$ make
+g++ -c Project12Classes.cpp
+g++ -c Project12Main.cpp
+g++ -o a.out Project12Classes.o Project12Main.o
+]0;skleips@ecc-a-16vm: ~/Desktop/Project_12skleips@ecc-a-16vm:~/Desktop/Project_12$ ./a.out
+Charles Babbage (80) [530213286]
+	mechanical engineering #1133764834, 3.8
+
+Marissa Meyer (37) [549114177]
+	ceo #53321 $4456000
+
+Alonzo Church (92) [586312110]
+	mathematics #1100539644, 4
+
+Dana Ulery (74) [573811211]
+	engineer #23451 $124569
+
+Stephen Cook (72) [023561234]
+	computer science #1101475893, 3.9
+
+Dorothy Denning (67) [327318922]
+	computer science #1100736485, 4
+
+Sheila Greibach (73) [549752244]
+	linguistics #1104783456, 3.7
+
+Michael Garey (60) [296231456]
+	author #51328 $243575
+
+Grace Hopper (46) [043784356]
+	admiral #31789 $145828
+
+Robert Kahn (73) [158678925]
+	computer science #1100553678, 3.8
+
+Donald Knuth (74) [549112366]
+	physics #1102458673, 3.9
+
+Ada Lovelace (37) [031437856]
+	programmer #11223 $89275
+
+Dennis Ritchie (70) [357556796]
+	creator #56782 $213788
+
+Maria Klawe (62) [573674325]
+	president #27865 $673239
+
+Bjarne Stroustrup (61) [454147658]
+	developer #45813 $231756
+
+Adi Shamir (60) [570962345]
+	cryptographer #34612 $221786
+
+Ron Rivest (65) [052217833]
+	mathematics #1100693521, 3.8
+
+Anita Borg (54) [577478966]
+	director #21436 $315127
+
+]0;skleips@ecc-a-16vm: ~/Desktop/Project_12skleips@ecc-a-16vm:~/Desktop/Project_12$ make
+make: `a.out' is up to date.
+]0;skleips@ecc-a-16vm: ~/Desktop/Project_12skleips@ecc-a-16vm:~/Desktop/Project_12$ ./a.out
+Charles Babbage (80) [530213286]
+	mechanical engineering #1133764834, 3.8
+
+Marissa Meyer (37) [549114177]
+	ceo #53321 $4456000
+
+Alonzo Church (92) [586312110]
+	mathematics #1100539644, 4
+
+Dana Ulery (74) [573811211]
+	engineer #23451 $124569
+
+Stephen Cook (72) [023561234]
+	computer science #1101475893, 3.9
+
+Dorothy Denning (67) [327318922]
+	computer science #1100736485, 4
+
+Sheila Greibach (73) [549752244]
+	linguistics #1104783456, 3.7
+
+Michael Garey (60) [296231456]
+	author #51328 $243575
+
+Grace Hopper (46) [043784356]
+	admiral #31789 $145828
+
+Robert Kahn (73) [158678925]
+	computer science #1100553678, 3.8
+
+Donald Knuth (74) [549112366]
+	physics #1102458673, 3.9
+
+Ada Lovelace (37) [031437856]
+	programmer #11223 $89275
+
+Dennis Ritchie (70) [357556796]
+	creator #56782 $213788
+
+Maria Klawe (62) [573674325]
+	president #27865 $673239
+
+Bjarne Stroustrup (61) [454147658]
+	developer #45813 $231756
+
+Adi Shamir (60) [570962345]
+	cryptographer #34612 $221786
+
+Ron Rivest (65) [052217833]
+	mathematics #1100693521, 3.8
+
+Anita Borg (54) [577478966]
+	director #21436 $315127
+
+]0;skleips@ecc-a-16vm: ~/Desktop/Project_12skleips@ecc-a-16vm:~/Desktop/Project_12$ exit
+exit
+
+Script done on Wed 30 Apr 2014 08:08:06 PM PDT

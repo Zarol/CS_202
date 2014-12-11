@@ -1,0 +1,445 @@
+Script started on Mon 31 May 1971 10:49:49 AM PDT
+]0;zarol@Zarol-Laptop: ~/Desktop/CS_202/Project_1zarol@Zarol-Laptop:~/Desktop/CS_202/Project_1$ g++ -o Project1.exe Project1.cpp
+]0;zarol@Zarol-Laptop: ~/Desktop/CS_202/Project_1zarol@Zarol-Laptop:~/Desktop/CS_202/Project_1$ ./Project1.exe
+Please input the file name...
+unshufled
+"unshufled" is an invalid file name.
+Please input the file name...
+unshuffled
+**************************************************
+* Type 'P' to print the unshuffled deck.         *
+* Type 'L' to print the shuffled deck.           *
+* Type 'S' to shuffle the deck.                  *
+* Type 'W' to write the shuffled deck to a file. *
+* Type 'Q' to quit.                              *
+**************************************************
+P
+
+ace club
+two club
+three club
+four club
+five club
+six club
+seven club
+eight club
+nine club
+ten club
+jack club
+queen club
+king club
+ace diamond
+two diamond
+three diamond
+four diamond
+five diamond
+six diamond
+seven diamond
+eight diamond
+nine diamond
+ten diamond
+jack diamond
+queen diamond
+king diamond
+ace heart
+two heart
+three heart
+four heart
+five heart
+six heart
+seven heart
+eight heart
+nine heart
+ten heart
+jack heart
+queen heart
+king heart
+ace spades
+two spades
+three spades
+four spades
+five spades
+six spades
+seven spades
+eight spades
+nine spades
+ten spades
+jack spades
+queen spades
+king spades
+
+**************************************************
+* Type 'P' to print the unshuffled deck.         *
+* Type 'L' to print the shuffled deck.           *
+* Type 'S' to shuffle the deck.                  *
+* Type 'W' to write the shuffled deck to a file. *
+* Type 'Q' to quit.                              *
+**************************************************
+L
+
+eight diamond
+eight heart
+two heart
+jack spades
+nine diamond
+king club
+nine spades
+three spades
+ten diamond
+jack club
+ace diamond
+queen diamond
+four club
+nine heart
+five heart
+seven diamond
+six heart
+king diamond
+nine club
+two diamond
+king spades
+six club
+four diamond
+three heart
+four heart
+four spades
+six spades
+ace heart
+two spades
+five spades
+ace spades
+seven spades
+seven heart
+queen club
+queen spades
+ace club
+queen heart
+king heart
+two club
+ten spades
+six diamond
+jack diamond
+five club
+three club
+seven club
+eight club
+jack heart
+eight spades
+three diamond
+ten heart
+five diamond
+ten club
+
+**************************************************
+* Type 'P' to print the unshuffled deck.         *
+* Type 'L' to print the shuffled deck.           *
+* Type 'S' to shuffle the deck.                  *
+* Type 'W' to write the shuffled deck to a file. *
+* Type 'Q' to quit.                              *
+**************************************************
+s
+Shuffle success.
+
+**************************************************
+* Type 'P' to print the unshuffled deck.         *
+* Type 'L' to print the shuffled deck.           *
+* Type 'S' to shuffle the deck.                  *
+* Type 'W' to write the shuffled deck to a file. *
+* Type 'Q' to quit.                              *
+**************************************************
+l
+
+queen heart
+king spades
+five club
+jack diamond
+six heart
+jack spades
+five diamond
+five spades
+nine spades
+two spades
+two diamond
+ten club
+jack club
+three club
+four spades
+four diamond
+eight diamond
+four heart
+seven spades
+queen diamond
+four club
+nine heart
+six spades
+king diamond
+nine club
+five heart
+ten diamond
+king heart
+eight heart
+ace diamond
+ace spades
+eight club
+six club
+queen club
+ace club
+three spades
+queen spades
+nine diamond
+three diamond
+ten heart
+king club
+seven diamond
+two club
+six diamond
+seven heart
+ten spades
+three heart
+seven club
+two heart
+ace heart
+jack heart
+eight spades
+
+**************************************************
+* Type 'P' to print the unshuffled deck.         *
+* Type 'L' to print the shuffled deck.           *
+* Type 'S' to shuffle the deck.                  *
+* Type 'W' to write the shuffled deck to a file. *
+* Type 'Q' to quit.                              *
+**************************************************
+w
+Written successfully into "shuffled."
+
+**************************************************
+* Type 'P' to print the unshuffled deck.         *
+* Type 'L' to print the shuffled deck.           *
+* Type 'S' to shuffle the deck.                  *
+* Type 'W' to write the shuffled deck to a file. *
+* Type 'Q' to quit.                              *
+**************************************************
+Q
+Goodbye!
+]0;zarol@Zarol-Laptop: ~/Desktop/CS_202/Project_1zarol@Zarol-Laptop:~/Desktop/CS_202/Project_1$ ./Project1.exe
+Please input the file name...
+unshuffled
+**************************************************
+* Type 'P' to print the unshuffled deck.         *
+* Type 'L' to print the shuffled deck.           *
+* Type 'S' to shuffle the deck.                  *
+* Type 'W' to write the shuffled deck to a file. *
+* Type 'Q' to quit.                              *
+**************************************************
+l
+
+king club
+jack heart
+eight spades
+three club
+eight club
+ace club
+king diamond
+nine club
+five spades
+two club
+six club
+four spades
+seven club
+queen heart
+ten spades
+five diamond
+four diamond
+king heart
+ace spades
+seven diamond
+eight heart
+five club
+queen spades
+ace diamond
+four club
+three heart
+nine heart
+ten diamond
+six spades
+ten heart
+nine spades
+five heart
+ten club
+six heart
+king spades
+two spades
+three spades
+queen club
+seven spades
+six diamond
+four heart
+seven heart
+queen diamond
+three diamond
+jack club
+eight diamond
+ace heart
+jack spades
+nine diamond
+two diamond
+jack diamond
+two heart
+
+**************************************************
+* Type 'P' to print the unshuffled deck.         *
+* Type 'L' to print the shuffled deck.           *
+* Type 'S' to shuffle the deck.                  *
+* Type 'W' to write the shuffled deck to a file. *
+* Type 'Q' to quit.                              *
+**************************************************
+p
+
+ace club
+two club
+three club
+four club
+five club
+six club
+seven club
+eight club
+nine club
+ten club
+jack club
+queen club
+king club
+ace diamond
+two diamond
+three diamond
+four diamond
+five diamond
+six diamond
+seven diamond
+eight diamond
+nine diamond
+ten diamond
+jack diamond
+queen diamond
+king diamond
+ace heart
+two heart
+three heart
+four heart
+five heart
+six heart
+seven heart
+eight heart
+nine heart
+ten heart
+jack heart
+queen heart
+king heart
+ace spades
+two spades
+three spades
+four spades
+five spades
+six spades
+seven spades
+eight spades
+nine spades
+ten spades
+jack spades
+queen spades
+king spades
+
+**************************************************
+* Type 'P' to print the unshuffled deck.         *
+* Type 'L' to print the shuffled deck.           *
+* Type 'S' to shuffle the deck.                  *
+* Type 'W' to write the shuffled deck to a file. *
+* Type 'Q' to quit.                              *
+**************************************************
+S
+Shuffle success.
+
+**************************************************
+* Type 'P' to print the unshuffled deck.         *
+* Type 'L' to print the shuffled deck.           *
+* Type 'S' to shuffle the deck.                  *
+* Type 'W' to write the shuffled deck to a file. *
+* Type 'Q' to quit.                              *
+**************************************************
+L
+
+eight diamond
+four diamond
+nine spades
+jack diamond
+two spades
+seven diamond
+eight club
+king heart
+king diamond
+two club
+five spades
+ten diamond
+ace heart
+three club
+four heart
+seven spades
+jack heart
+ten club
+six diamond
+eight heart
+queen club
+ace club
+jack club
+queen spades
+four club
+ace diamond
+king spades
+six club
+five club
+ace spades
+king club
+six heart
+eight spades
+jack spades
+seven club
+seven heart
+ten spades
+queen diamond
+two diamond
+three diamond
+two heart
+five diamond
+five heart
+six spades
+nine diamond
+ten heart
+three heart
+queen heart
+nine heart
+three spades
+nine club
+four spades
+
+**************************************************
+* Type 'P' to print the unshuffled deck.         *
+* Type 'L' to print the shuffled deck.           *
+* Type 'S' to shuffle the deck.                  *
+* Type 'W' to write the shuffled deck to a file. *
+* Type 'Q' to quit.                              *
+**************************************************
+W
+Written successfully into "shuffled."
+
+**************************************************
+* Type 'P' to print the unshuffled deck.         *
+* Type 'L' to print the shuffled deck.           *
+* Type 'S' to shuffle the deck.                  *
+* Type 'W' to write the shuffled deck to a file. *
+* Type 'Q' to quit.                              *
+**************************************************
+Q
+Goodbye!
+]0;zarol@Zarol-Laptop: ~/Desktop/CS_202/Project_1zarol@Zarol-Laptop:~/Desktop/CS_202/Project_1$ exit
+exit
+
+Script done on Mon 31 May 1971 10:51:09 AM PDT

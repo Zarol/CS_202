@@ -1,0 +1,392 @@
+//List - Array-based implementation
+#include"Project13Classes.h"
+
+ListA::ListA(int size)
+{
+	this->size = size;
+	actual = 0;
+	cursor = -1;
+	data = new int[size];
+}
+
+ListA::ListA(const ListA& l)
+{
+	size = l.size;
+	actual = l.actual;
+	cursor = l.cursor;
+	data = new int[size];
+	for(int i = 0; i < l.actual; i++)
+		data[i] = l.data[i];
+}
+
+ListA::~ListA()
+{
+	delete[] data;
+}
+
+bool ListA::gotoBeginning()
+{
+	if(!empty())
+		cursor = 0;
+	else
+		return false;
+	return true;
+}
+
+bool ListA::gotoEnd()
+{
+	if(!empty())
+		cursor = actual - 1;
+	else
+		return false;
+	return true;
+}
+
+bool ListA::gotoNext()
+{
+	if((cursor + 1) < actual)
+		cursor += 1;
+	else
+		return false;
+	return true;
+}
+
+bool ListA::gotoPrior()
+{
+	if(!empty() && actual != 1)
+		cursor -= 1;
+	else
+		return false;
+	return true;
+}
+
+bool ListA::insertAfter(int c)
+{
+	if(!full())
+	{
+		for(int i = actual; i > cursor + 1; i--)
+			data[i] = data[i-1];
+		cursor++;
+		data[cursor] = c;
+		actual++;
+	}
+	else
+		return false;
+	return true;
+}
+
+bool ListA::insertBefore(int c)
+{
+	if(!full())
+	{
+		for(int i = actual; i > cursor; i--)
+			data[i] = data[i-1];
+		data[cursor] = c;
+		actual++;
+	}
+	else
+		return false;
+	return true;
+}
+
+bool ListA::remove(int& c)
+{
+	if(!empty())
+	{
+		c = data[cursor];
+		for(int i = cursor; i < actual; i++)
+			data[i] = data[i+1];
+		actual--;
+		if(actual < cursor)
+		{
+			actual = 0;
+			cursor = -1;
+		}	
+	}
+	else
+		return false;
+	return true;
+}
+
+bool ListA::replace(int c)
+{
+	if(!empty())
+		data[cursor] = c;
+	else
+		return false;
+	return true;
+}
+
+bool ListA::getCursor(int& c) const
+{
+	if(!empty())
+		c = data[cursor];
+	else
+		return false;
+	return true;
+}
+
+bool ListA::empty() const
+{
+	return (actual == 0);
+}
+
+bool ListA::full() const
+{
+	return (actual == size);
+}
+
+bool ListA::clear()
+{
+	actual = 0;
+	cursor = -1;
+	return true;
+}
+
+ListA& ListA::operator=(const ListA& l)
+{
+	actual = l.actual;
+	cursor = l.cursor;
+	for(int i = 0; i < l.actual; i++)
+		data[i] = l.data[i];
+	return *this;
+}
+
+ostream& operator<<(ostream& os, const ListA& l)
+{
+	for(int i = 0; i < l.actual; i++)
+		os << "[" << i << "] " << l.data[i] << ", ";
+	os << endl;
+	return os;
+}
+
+bool ListA::operator==(const ListA& l) const
+{
+	if(actual != l.actual)
+		return false;
+	for(int i = 0; i < actual; i++)
+		if(data[i] != l.data[i])
+			return false;
+	return true;
+		
+}
+
+//List - Node-based implementation
+
+Node::Node(int c, Node* n)
+{
+	data = c;
+	next = n;
+}
+
+ListN::ListN(int IGNORE)
+{
+	head = NULL;
+	cursor = NULL;
+}
+
+ListN::ListN(const ListN& l)
+{
+	Node* temp = head = l.head;
+	int i;
+	cout << head->data << endl;
+	while(temp != NULL)
+	{
+		insertAfter(temp->data);
+		i++;
+		temp = temp->next;
+	}
+}
+
+ListN::~ListN()
+{
+	Node* temp;
+	cursor = NULL;
+
+	while(head != NULL)
+	{
+		temp = head;
+		head = head->next;
+		delete temp;
+	}
+}
+
+bool ListN::gotoBeginning()
+{
+	if(!empty())
+		cursor = head;
+	else
+		return false;
+	return true;
+}
+
+bool ListN::gotoEnd()
+{
+	if(!empty())
+		while(cursor->next != NULL)
+			cursor = cursor->next;
+	else
+		return false;
+	return true;
+}
+
+bool ListN::gotoNext()
+{
+	if(!empty())
+		if(cursor->next != NULL)
+			cursor = cursor->next;
+		else
+			return false;
+	else
+		return false;
+	return true;
+}
+
+bool ListN::gotoPrior()
+{
+	if(!empty())
+		if(cursor != head)
+		{
+			Node* temp = cursor;
+			cursor = head;
+			while(cursor->next != temp)
+				cursor = cursor->next;
+		}
+		else
+			return false;
+	else
+		return false;
+	return true;
+}
+
+bool ListN::insertAfter(int c)
+{
+	if(!empty())
+	{
+		Node* temp = new Node(c, cursor->next);
+		cout << temp->data << endl;
+		cursor->next = temp;
+		cursor = temp;
+	}
+	else
+	{
+		head = new Node(c, NULL);
+		cursor = head;
+	}
+	return true;
+}
+
+bool ListN::insertBefore(int c)
+{
+	if(!empty())
+	{
+		Node* temp = new Node(cursor->data, cursor->next);
+		cursor->next = temp;
+		cursor->data = c;
+	}
+	else
+	{
+		head = new Node(c, NULL);
+		cursor = head;
+	}
+	return true;
+}
+
+bool ListN::remove(int& c)
+{
+	if(!empty())
+	{
+		c = cursor->data;
+		Node* temp = cursor->next;
+		delete cursor;
+		gotoPrior();
+		cursor->next = temp;
+	}
+	else
+		return false;
+	return true;
+}
+
+bool ListN::replace(int c)
+{
+	if(!empty())
+		cursor->data = c;
+	else
+		return false;
+	return true;
+}
+
+bool ListN::getCursor(int& c) const
+{
+	if(!empty())
+		c = cursor->data;
+	else
+		return false;
+	return true;
+}
+
+bool ListN::empty() const
+{
+	return (head == NULL);
+}
+
+bool ListN::full() const
+{
+	return false;
+}
+
+bool ListN::clear()
+{
+	Node* temp;
+	cursor = NULL;
+
+	while(head != NULL)
+	{
+		temp = head;
+		head = head->next;
+		delete temp;
+	}
+	head = NULL;
+	return true;
+}
+
+ListN& ListN::operator=(const ListN& l)
+{
+	Node* temp = head = l.head;
+	while(temp != NULL)
+	{
+		insertAfter(temp->data);
+		temp = temp->next;
+	}	
+}
+
+ostream& operator<<(ostream& os, const ListN& l)
+{
+	int i = 0;
+	Node* temp = l.head;
+	while(temp != NULL)
+	{
+		os << "[" << i << "] " << temp->data << ", ";
+		temp = temp->next;
+		i++;
+	}
+	os << endl;
+	return os;
+}
+
+bool ListN::operator==(const ListN& l) const
+{
+	Node* temp1 = head;
+	Node* temp2 = l.head;
+	while(temp2 != NULL)
+	{
+		if(temp1->data != temp2->data)
+			return false;
+		temp2 = temp2->next;
+		temp1 = temp1->next;
+	}
+	if(temp1->next != NULL)
+		return false;
+	return true;
+		
+}

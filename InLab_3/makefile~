@@ -1,0 +1,6 @@
+a.out: arg.o atoi.o
+	g++ arg.o atoi.o
+arg.o: arg.cpp atoi.h
+	g++ -c arg.cpp
+atoi.o: atoi.cpp atoi.h
+	g++ -c atoi.cpp

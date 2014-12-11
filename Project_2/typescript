@@ -1,0 +1,805 @@
+Script started on Wed 05 Feb 2014 06:05:17 PM PST
+]0;zarol@zarol: ~/Desktop/Project_2zarol@zarol:~/Desktop/Project_2$ g++ Project2.cpp -o Project2.exe
+]0;zarol@zarol: ~/Desktop/Project_2zarol@zarol:~/Desktop/Project_2$ ./Project2.exe
+Please input the unshuffled deck's file name...
+unshuffled
+Please input the list of player's file name...
+players
+The deck has been pre-dealt to initialize outputs.
+****************************************************
+*                   CRAZY EIGHTS                   *
+****************************************************
+* U to print the unshuffled deck.                  *
+* S to print the shuffled deck.                    *
+* O to print the stock deck.                       *
+* C to print the discard deck.                     *
+* W to write the shuffled deck to a file.          *
+* X to shuffle the deck.                           *
+* D to deal the cards. (Shuffle to deal new cards.)*
+* P to print the player list.                      *
+* H to print all player hands.                     *
+* Q to Quit.                                       *
+****************************************************
+P
+****************************************************
+Saharath : 99999
+Nancy : 12345
+Mohammad : 67891
+Shubham : 55555
+****************************************************
+*                   CRAZY EIGHTS                   *
+****************************************************
+* U to print the unshuffled deck.                  *
+* S to print the shuffled deck.                    *
+* O to print the stock deck.                       *
+* C to print the discard deck.                     *
+* W to write the shuffled deck to a file.          *
+* X to shuffle the deck.                           *
+* D to deal the cards. (Shuffle to deal new cards.)*
+* P to print the player list.                      *
+* H to print all player hands.                     *
+* Q to Quit.                                       *
+****************************************************
+H
+****************************************************
+Saharath : 99999
+heart 11 (Saharath)
+heart 12 (Saharath)
+ace 5 (Saharath)
+club 8 (Saharath)
+club 1 (Saharath)
+
+Nancy : 12345
+heart 7 (Nancy)
+diamond 9 (Nancy)
+ace 8 (Nancy)
+club 13 (Nancy)
+heart 6 (Nancy)
+
+Mohammad : 67891
+diamond 6 (Mohammad)
+heart 3 (Mohammad)
+ace 9 (Mohammad)
+ace 3 (Mohammad)
+diamond 11 (Mohammad)
+
+Shubham : 55555
+diamond 5 (Shubham)
+ace 2 (Shubham)
+heart 10 (Shubham)
+diamond 13 (Shubham)
+club 10 (Shubham)
+
+****************************************************
+*                   CRAZY EIGHTS                   *
+****************************************************
+* U to print the unshuffled deck.                  *
+* S to print the shuffled deck.                    *
+* O to print the stock deck.                       *
+* C to print the discard deck.                     *
+* W to write the shuffled deck to a file.          *
+* X to shuffle the deck.                           *
+* D to deal the cards. (Shuffle to deal new cards.)*
+* P to print the player list.                      *
+* H to print all player hands.                     *
+* Q to Quit.                                       *
+****************************************************
+X
+****************************************************
+Cards successfully shuffled.
+****************************************************
+*                   CRAZY EIGHTS                   *
+****************************************************
+* U to print the unshuffled deck.                  *
+* S to print the shuffled deck.                    *
+* O to print the stock deck.                       *
+* C to print the discard deck.                     *
+* W to write the shuffled deck to a file.          *
+* X to shuffle the deck.                           *
+* D to deal the cards. (Shuffle to deal new cards.)*
+* P to print the player list.                      *
+* H to print all player hands.                     *
+* Q to Quit.                                       *
+****************************************************
+S
+****************************************************
+heart 8 (shuffled)
+ace 5 (shuffled)
+club 10 (shuffled)
+diamond 2 (shuffled)
+ace 12 (shuffled)
+club 3 (shuffled)
+diamond 7 (shuffled)
+diamond 8 (shuffled)
+ace 1 (shuffled)
+club 7 (shuffled)
+club 1 (shuffled)
+heart 5 (shuffled)
+ace 7 (shuffled)
+ace 3 (shuffled)
+heart 3 (shuffled)
+club 11 (shuffled)
+club 9 (shuffled)
+ace 4 (shuffled)
+diamond 10 (shuffled)
+ace 8 (shuffled)
+diamond 12 (shuffled)
+ace 13 (shuffled)
+heart 7 (shuffled)
+club 12 (shuffled)
+ace 9 (shuffled)
+heart 11 (shuffled)
+club 4 (shuffled)
+heart 4 (shuffled)
+club 2 (shuffled)
+ace 2 (shuffled)
+diamond 6 (shuffled)
+club 8 (shuffled)
+diamond 5 (shuffled)
+diamond 13 (shuffled)
+club 5 (shuffled)
+club 6 (shuffled)
+diamond 3 (shuffled)
+heart 13 (shuffled)
+ace 10 (shuffled)
+heart 10 (shuffled)
+ace 6 (shuffled)
+club 13 (shuffled)
+diamond 1 (shuffled)
+diamond 11 (shuffled)
+heart 6 (shuffled)
+heart 9 (shuffled)
+diamond 9 (shuffled)
+ace 11 (shuffled)
+heart 2 (shuffled)
+heart 1 (shuffled)
+heart 12 (shuffled)
+diamond 4 (shuffled)
+****************************************************
+*                   CRAZY EIGHTS                   *
+****************************************************
+* U to print the unshuffled deck.                  *
+* S to print the shuffled deck.                    *
+* O to print the stock deck.                       *
+* C to print the discard deck.                     *
+* W to write the shuffled deck to a file.          *
+* X to shuffle the deck.                           *
+* D to deal the cards. (Shuffle to deal new cards.)*
+* P to print the player list.                      *
+* H to print all player hands.                     *
+* Q to Quit.                                       *
+****************************************************
+W
+****************************************************
+Shuffled deck successfully written to "shuffled".
+****************************************************
+*                   CRAZY EIGHTS                   *
+****************************************************
+* U to print the unshuffled deck.                  *
+* S to print the shuffled deck.                    *
+* O to print the stock deck.                       *
+* C to print the discard deck.                     *
+* W to write the shuffled deck to a file.          *
+* X to shuffle the deck.                           *
+* D to deal the cards. (Shuffle to deal new cards.)*
+* P to print the player list.                      *
+* H to print all player hands.                     *
+* Q to Quit.                                       *
+****************************************************
+D
+****************************************************
+Cards successfully dealt.
+****************************************************
+*                   CRAZY EIGHTS                   *
+****************************************************
+* U to print the unshuffled deck.                  *
+* S to print the shuffled deck.                    *
+* O to print the stock deck.                       *
+* C to print the discard deck.                     *
+* W to write the shuffled deck to a file.          *
+* X to shuffle the deck.                           *
+* D to deal the cards. (Shuffle to deal new cards.)*
+* P to print the player list.                      *
+* H to print all player hands.                     *
+* Q to Quit.                                       *
+****************************************************
+O
+****************************************************
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+ace 13 (stock)
+heart 7 (stock)
+club 12 (stock)
+ace 9 (stock)
+heart 11 (stock)
+club 4 (stock)
+heart 4 (stock)
+club 2 (stock)
+ace 2 (stock)
+diamond 6 (stock)
+club 8 (stock)
+diamond 5 (stock)
+diamond 13 (stock)
+club 5 (stock)
+club 6 (stock)
+diamond 3 (stock)
+heart 13 (stock)
+ace 10 (stock)
+heart 10 (stock)
+ace 6 (stock)
+club 13 (stock)
+diamond 1 (stock)
+diamond 11 (stock)
+heart 6 (stock)
+heart 9 (stock)
+diamond 9 (stock)
+ace 11 (stock)
+heart 2 (stock)
+heart 1 (stock)
+heart 12 (stock)
+diamond 4 (stock)
+****************************************************
+*                   CRAZY EIGHTS                   *
+****************************************************
+* U to print the unshuffled deck.                  *
+* S to print the shuffled deck.                    *
+* O to print the stock deck.                       *
+* C to print the discard deck.                     *
+* W to write the shuffled deck to a file.          *
+* X to shuffle the deck.                           *
+* D to deal the cards. (Shuffle to deal new cards.)*
+* P to print the player list.                      *
+* H to print all player hands.                     *
+* Q to Quit.                                       *
+****************************************************
+C
+****************************************************
+diamond 12 (discard)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+****************************************************
+*                   CRAZY EIGHTS                   *
+****************************************************
+* U to print the unshuffled deck.                  *
+* S to print the shuffled deck.                    *
+* O to print the stock deck.                       *
+* C to print the discard deck.                     *
+* W to write the shuffled deck to a file.          *
+* X to shuffle the deck.                           *
+* D to deal the cards. (Shuffle to deal new cards.)*
+* P to print the player list.                      *
+* H to print all player hands.                     *
+* Q to Quit.                                       *
+****************************************************
+H
+****************************************************
+Saharath : 99999
+heart 8 (Saharath)
+ace 12 (Saharath)
+ace 1 (Saharath)
+ace 7 (Saharath)
+club 9 (Saharath)
+
+Nancy : 12345
+ace 5 (Nancy)
+club 3 (Nancy)
+club 7 (Nancy)
+ace 3 (Nancy)
+ace 4 (Nancy)
+
+Mohammad : 67891
+club 10 (Mohammad)
+diamond 7 (Mohammad)
+club 1 (Mohammad)
+heart 3 (Mohammad)
+diamond 10 (Mohammad)
+
+Shubham : 55555
+diamond 2 (Shubham)
+diamond 8 (Shubham)
+heart 5 (Shubham)
+club 11 (Shubham)
+ace 8 (Shubham)
+
+****************************************************
+*                   CRAZY EIGHTS                   *
+****************************************************
+* U to print the unshuffled deck.                  *
+* S to print the shuffled deck.                    *
+* O to print the stock deck.                       *
+* C to print the discard deck.                     *
+* W to write the shuffled deck to a file.          *
+* X to shuffle the deck.                           *
+* D to deal the cards. (Shuffle to deal new cards.)*
+* P to print the player list.                      *
+* H to print all player hands.                     *
+* Q to Quit.                                       *
+****************************************************
+Q
+****************************************************
+Goodbye!
+]0;zarol@zarol: ~/Desktop/Project_2zarol@zarol:~/Desktop/Project_2$ ./Project2.exe
+Please input the unshuffled deck's file name...
+unshuffled
+Please input the list of player's file name...
+playerss
+"playerss" is an invalid file name.
+Please input the list of player's file name...
+players
+The deck has been pre-dealt to initialize outputs.
+****************************************************
+*                   CRAZY EIGHTS                   *
+****************************************************
+* U to print the unshuffled deck.                  *
+* S to print the shuffled deck.                    *
+* O to print the stock deck.                       *
+* C to print the discard deck.                     *
+* W to write the shuffled deck to a file.          *
+* X to shuffle the deck.                           *
+* D to deal the cards. (Shuffle to deal new cards.)*
+* P to print the player list.                      *
+* H to print all player hands.                     *
+* Q to Quit.                                       *
+****************************************************
+u
+****************************************************
+club 1 (unshuffled)
+club 2 (unshuffled)
+club 3 (unshuffled)
+club 4 (unshuffled)
+club 5 (unshuffled)
+club 6 (unshuffled)
+club 7 (unshuffled)
+club 8 (unshuffled)
+club 9 (unshuffled)
+club 10 (unshuffled)
+club 11 (unshuffled)
+club 12 (unshuffled)
+club 13 (unshuffled)
+diamond 1 (unshuffled)
+diamond 2 (unshuffled)
+diamond 3 (unshuffled)
+diamond 4 (unshuffled)
+diamond 5 (unshuffled)
+diamond 6 (unshuffled)
+diamond 7 (unshuffled)
+diamond 8 (unshuffled)
+diamond 9 (unshuffled)
+diamond 10 (unshuffled)
+diamond 11 (unshuffled)
+diamond 12 (unshuffled)
+diamond 13 (unshuffled)
+heart 1 (unshuffled)
+heart 2 (unshuffled)
+heart 3 (unshuffled)
+heart 4 (unshuffled)
+heart 5 (unshuffled)
+heart 6 (unshuffled)
+heart 7 (unshuffled)
+heart 8 (unshuffled)
+heart 9 (unshuffled)
+heart 10 (unshuffled)
+heart 11 (unshuffled)
+heart 12 (unshuffled)
+heart 13 (unshuffled)
+ace 1 (unshuffled)
+ace 2 (unshuffled)
+ace 3 (unshuffled)
+ace 4 (unshuffled)
+ace 5 (unshuffled)
+ace 6 (unshuffled)
+ace 7 (unshuffled)
+ace 8 (unshuffled)
+ace 9 (unshuffled)
+ace 10 (unshuffled)
+ace 11 (unshuffled)
+ace 12 (unshuffled)
+ace 13 (unshuffled)
+****************************************************
+*                   CRAZY EIGHTS                   *
+****************************************************
+* U to print the unshuffled deck.                  *
+* S to print the shuffled deck.                    *
+* O to print the stock deck.                       *
+* C to print the discard deck.                     *
+* W to write the shuffled deck to a file.          *
+* X to shuffle the deck.                           *
+* D to deal the cards. (Shuffle to deal new cards.)*
+* P to print the player list.                      *
+* H to print all player hands.                     *
+* Q to Quit.                                       *
+****************************************************
+s
+****************************************************
+heart 6 (shuffled)
+diamond 10 (shuffled)
+club 4 (shuffled)
+heart 3 (shuffled)
+club 1 (shuffled)
+heart 8 (shuffled)
+diamond 8 (shuffled)
+club 2 (shuffled)
+diamond 5 (shuffled)
+heart 4 (shuffled)
+ace 2 (shuffled)
+heart 13 (shuffled)
+club 11 (shuffled)
+ace 8 (shuffled)
+ace 5 (shuffled)
+club 5 (shuffled)
+diamond 2 (shuffled)
+ace 3 (shuffled)
+ace 13 (shuffled)
+diamond 1 (shuffled)
+ace 7 (shuffled)
+club 12 (shuffled)
+club 9 (shuffled)
+ace 10 (shuffled)
+heart 11 (shuffled)
+diamond 9 (shuffled)
+heart 9 (shuffled)
+diamond 7 (shuffled)
+diamond 12 (shuffled)
+ace 9 (shuffled)
+heart 2 (shuffled)
+heart 1 (shuffled)
+heart 10 (shuffled)
+ace 12 (shuffled)
+heart 7 (shuffled)
+heart 12 (shuffled)
+diamond 3 (shuffled)
+ace 4 (shuffled)
+diamond 13 (shuffled)
+club 6 (shuffled)
+club 10 (shuffled)
+club 8 (shuffled)
+ace 1 (shuffled)
+club 13 (shuffled)
+diamond 6 (shuffled)
+diamond 11 (shuffled)
+heart 5 (shuffled)
+diamond 4 (shuffled)
+club 7 (shuffled)
+club 3 (shuffled)
+ace 11 (shuffled)
+ace 6 (shuffled)
+****************************************************
+*                   CRAZY EIGHTS                   *
+****************************************************
+* U to print the unshuffled deck.                  *
+* S to print the shuffled deck.                    *
+* O to print the stock deck.                       *
+* C to print the discard deck.                     *
+* W to write the shuffled deck to a file.          *
+* X to shuffle the deck.                           *
+* D to deal the cards. (Shuffle to deal new cards.)*
+* P to print the player list.                      *
+* H to print all player hands.                     *
+* Q to Quit.                                       *
+****************************************************
+o
+****************************************************
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+club 12 (stock)
+club 9 (stock)
+ace 10 (stock)
+heart 11 (stock)
+diamond 9 (stock)
+heart 9 (stock)
+diamond 7 (stock)
+diamond 12 (stock)
+ace 9 (stock)
+heart 2 (stock)
+heart 1 (stock)
+heart 10 (stock)
+ace 12 (stock)
+heart 7 (stock)
+heart 12 (stock)
+diamond 3 (stock)
+ace 4 (stock)
+diamond 13 (stock)
+club 6 (stock)
+club 10 (stock)
+club 8 (stock)
+ace 1 (stock)
+club 13 (stock)
+diamond 6 (stock)
+diamond 11 (stock)
+heart 5 (stock)
+diamond 4 (stock)
+club 7 (stock)
+club 3 (stock)
+ace 11 (stock)
+ace 6 (stock)
+****************************************************
+*                   CRAZY EIGHTS                   *
+****************************************************
+* U to print the unshuffled deck.                  *
+* S to print the shuffled deck.                    *
+* O to print the stock deck.                       *
+* C to print the discard deck.                     *
+* W to write the shuffled deck to a file.          *
+* X to shuffle the deck.                           *
+* D to deal the cards. (Shuffle to deal new cards.)*
+* P to print the player list.                      *
+* H to print all player hands.                     *
+* Q to Quit.                                       *
+****************************************************
+c
+****************************************************
+ace 7 (discard)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+suit 0 (location)
+****************************************************
+*                   CRAZY EIGHTS                   *
+****************************************************
+* U to print the unshuffled deck.                  *
+* S to print the shuffled deck.                    *
+* O to print the stock deck.                       *
+* C to print the discard deck.                     *
+* W to write the shuffled deck to a file.          *
+* X to shuffle the deck.                           *
+* D to deal the cards. (Shuffle to deal new cards.)*
+* P to print the player list.                      *
+* H to print all player hands.                     *
+* Q to Quit.                                       *
+****************************************************
+w
+****************************************************
+Shuffled deck successfully written to "shuffled".
+****************************************************
+*                   CRAZY EIGHTS                   *
+****************************************************
+* U to print the unshuffled deck.                  *
+* S to print the shuffled deck.                    *
+* O to print the stock deck.                       *
+* C to print the discard deck.                     *
+* W to write the shuffled deck to a file.          *
+* X to shuffle the deck.                           *
+* D to deal the cards. (Shuffle to deal new cards.)*
+* P to print the player list.                      *
+* H to print all player hands.                     *
+* Q to Quit.                                       *
+****************************************************
+x
+****************************************************
+Cards successfully shuffled.
+****************************************************
+*                   CRAZY EIGHTS                   *
+****************************************************
+* U to print the unshuffled deck.                  *
+* S to print the shuffled deck.                    *
+* O to print the stock deck.                       *
+* C to print the discard deck.                     *
+* W to write the shuffled deck to a file.          *
+* X to shuffle the deck.                           *
+* D to deal the cards. (Shuffle to deal new cards.)*
+* P to print the player list.                      *
+* H to print all player hands.                     *
+* Q to Quit.                                       *
+****************************************************
+d
+****************************************************
+Cards successfully dealt.
+****************************************************
+*                   CRAZY EIGHTS                   *
+****************************************************
+* U to print the unshuffled deck.                  *
+* S to print the shuffled deck.                    *
+* O to print the stock deck.                       *
+* C to print the discard deck.                     *
+* W to write the shuffled deck to a file.          *
+* X to shuffle the deck.                           *
+* D to deal the cards. (Shuffle to deal new cards.)*
+* P to print the player list.                      *
+* H to print all player hands.                     *
+* Q to Quit.                                       *
+****************************************************
+p
+****************************************************
+Saharath : 99999
+Nancy : 12345
+Mohammad : 67891
+Shubham : 55555
+****************************************************
+*                   CRAZY EIGHTS                   *
+****************************************************
+* U to print the unshuffled deck.                  *
+* S to print the shuffled deck.                    *
+* O to print the stock deck.                       *
+* C to print the discard deck.                     *
+* W to write the shuffled deck to a file.          *
+* X to shuffle the deck.                           *
+* D to deal the cards. (Shuffle to deal new cards.)*
+* P to print the player list.                      *
+* H to print all player hands.                     *
+* Q to Quit.                                       *
+****************************************************
+h
+****************************************************
+Saharath : 99999
+diamond 2 (Saharath)
+ace 5 (Saharath)
+heart 7 (Saharath)
+heart 12 (Saharath)
+ace 11 (Saharath)
+
+Nancy : 12345
+heart 13 (Nancy)
+club 13 (Nancy)
+heart 2 (Nancy)
+heart 9 (Nancy)
+diamond 5 (Nancy)
+
+Mohammad : 67891
+club 2 (Mohammad)
+ace 1 (Mohammad)
+diamond 13 (Mohammad)
+heart 10 (Mohammad)
+heart 5 (Mohammad)
+
+Shubham : 55555
+heart 6 (Shubham)
+ace 7 (Shubham)
+club 5 (Shubham)
+heart 4 (Shubham)
+diamond 12 (Shubham)
+
+****************************************************
+*                   CRAZY EIGHTS                   *
+****************************************************
+* U to print the unshuffled deck.                  *
+* S to print the shuffled deck.                    *
+* O to print the stock deck.                       *
+* C to print the discard deck.                     *
+* W to write the shuffled deck to a file.          *
+* X to shuffle the deck.                           *
+* D to deal the cards. (Shuffle to deal new cards.)*
+* P to print the player list.                      *
+* H to print all player hands.                     *
+* Q to Quit.                                       *
+****************************************************
+q
+****************************************************
+Goodbye!
+]0;zarol@zarol: ~/Desktop/Project_2zarol@zarol:~/Desktop/Project_2$ exit
+exit
+
+Script done on Wed 05 Feb 2014 06:06:51 PM PST

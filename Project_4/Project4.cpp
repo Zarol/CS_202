@@ -1,0 +1,527 @@
+/*
+* PROGRAM: CS 202 Project 4
+* AUTHOR: Saharath Kleips
+* DATE: 02/16/2014
+* PURPOSE: To recreate the basis structure of the Crazy Eights game with dynamic memory
+*/
+
+//	IMPORTS
+#include <stdlib.h>
+#include <iostream>
+#include <fstream>
+using namespace std;
+//	END IMPORTS
+
+
+
+//	STRUCTURES
+/*
+* Represents a Card within Crazy Eights
+*/
+struct Card
+{
+	char *suit;
+	int rank;
+	char *location;
+};//END Card STRUCTURE
+
+/*
+* Represents a Player within Crazy Eights
+*/
+struct Player
+{
+	char *name;
+	int *id;
+};//END Player STRUCTURE
+//	END STRUCTURES
+
+
+
+//	CONSTANTS
+const int NUM_CARDS = 52;
+int NUM_PLAYERS; //Fake constant (just a global int) for the sake of dynamic amount of players originally used throughout the program
+//	END CONSTANTS
+
+
+
+//	FUNCTION PROTOTYPES
+void initDeck(Card*);
+void initCard(Card&);
+void initPlayers(Player*);
+void initPlayer(Player&);
+
+void deallocateDeck(Card*);
+void deallocatePlayers(Player*);
+
+bool loadDeck(Card*, char*);
+bool loadPlayers(Player*, char*);
+bool loadPlayerAmount(char*);
+
+void shuffleDeck(Card*, Card*);
+
+void strCopy(char*, char*);
+int strLength(char*);
+void cardCopy(Card*, Card*, char*);
+void cardCopy(Card*, Card*);
+
+void printDeck(Card*);
+void printPlayers(Player*);
+//	END FUNCTION PROTOTYPES
+
+
+
+/*
+* Entry point for the function
+*/
+int main()
+{
+	bool exit = false;
+	char userInput;
+	char *fileName = new char[100];
+	
+	Card *unshuffled = new Card[NUM_CARDS];
+	initDeck(unshuffled);
+	Card *shuffled = new Card[NUM_CARDS];
+	initDeck(shuffled);
+
+	Player *players;
+
+	//Grab Deck File Name
+	do
+	{
+		cout << "Please enter the unshuffled deck's file name (100 MAX):" << endl;
+		cin >> fileName;
+	} while (loadDeck(unshuffled, fileName) == false);
+
+	//Grab Player File Name
+	do
+	{
+		cout << "Please enter the list of player's file name (100 MAX):" << endl;
+		cin >> fileName;
+		if(loadPlayerAmount(fileName) == true)
+		{
+			players = new Player[NUM_PLAYERS];
+			initPlayers(players);
+		}
+	} while (loadPlayers(players, fileName) == false);
+	delete[] fileName;
+	fileName = NULL;	
+	
+	cout << "--- Functions have been pre-run to initialize outputs. ---" << endl;
+	shuffleDeck(shuffled, unshuffled);
+
+	do
+	{
+		cout << "*************************************" << endl;
+		cout << "*           CRAZY EIGHTS            *" << endl;
+		cout << "*************************************" << endl;
+		cout << "* 'U' to print the unshuffled deck. *" << endl;
+		cout << "* 'S' to print the shuffled deck.   *" << endl;
+		cout << "* 'P' to print the players.         *" << endl;
+		cout << "* 'X' to shuffle the deck.          *" << endl;
+		cout << "* 'Q' to quit.                      *" << endl;
+		cout << "*************************************" << endl;
+		cin >> userInput;
+		cout << "*************************************" << endl;
+		switch (toupper(userInput))
+		{
+			case 'U':
+				printDeck(unshuffled);
+				break;
+			case 'S':
+				printDeck(shuffled);
+				break;
+			case 'P':
+				printPlayers(players);
+				break;
+			case 'X':
+				shuffleDeck(shuffled, unshuffled);
+				cout << "Shuffle success." << endl;
+				break;
+			case 'Q':
+				exit = true;
+				break;
+			default:
+				cout << "\"" << userInput << "\" is an invalid input." << endl;
+				break;
+		}
+	} while (exit == false);
+	cout << "Goodbye!" << endl;
+
+	deallocateDeck(unshuffled);
+	deallocateDeck(shuffled);
+	deallocatePlayers(players);
+	return 0;
+}//END main FUNCTION
+
+
+
+//	INITIALIZE FUNCTIONS
+/*
+* Initalizes an array of Cards to their default values.
+* PARAM: *ptrDeck - The pointer for the array of cards
+*/
+void initDeck(Card *ptrDeck)
+{
+	for(int i = 0; i < NUM_CARDS; i++)
+	{
+		initCard(*ptrDeck);
+		ptrDeck++;
+	}
+}//END initDeck FUNCTION
+
+/*
+* Initalizes a Card.
+* PARAM: &card - The Card to be initalized
+*/
+void initCard(Card &card)
+{
+
+	card.suit = new char[strLength("suit")];
+	strCopy(card.suit, "suit");
+	card.rank = 0;
+	card.location = new char[strLength("location")];
+	strCopy(card.location, "location");
+}//END initCard FUNCTION
+
+/*
+* Initializes an array of 4 Players.
+* PARAM: *ptrPlayers - The pointer for the array of Players
+*/
+void initPlayers(Player *ptrPlayers)
+{
+	for (int i = 0; i < NUM_PLAYERS; i++)
+	{
+		initPlayer(*ptrPlayers);
+		ptrPlayers++;
+	}
+}//END initPlayers FUNCTION
+
+/*
+* Initializes a Player.
+* PARAM: &player - The Player to be initialized
+*/
+void initPlayer(Player &player)
+{
+	player.name = new char[strLength("name")];
+	strCopy(player.name, "name");
+	player.id = new int[5];
+	int *ptrID = player.id;
+	for(int i = 0; i < 5; i++)
+	{
+		*ptrID = 0;
+		ptrID++;
+	}
+}//END initPlayer FUNCTION
+//	END INITIALIZE FUNCTIONS
+
+
+
+//	GARBAGE COLLECTION FUNCTIONS
+/*
+* Deallocates a dynamically sized array of Cards.
+* PARAM: *ptrDeck - The pointer of the array of Cards
+*/
+void deallocateDeck(Card *ptrDeck)
+{
+	Card *ptrRoot = ptrDeck;
+	for (int i = 0; i < NUM_CARDS; i++)
+	{
+		if ((*ptrDeck).suit != NULL)
+			delete[] (*ptrDeck).suit;
+		if ((*ptrDeck).location != NULL)
+			delete[] (*ptrDeck).location;
+		(*ptrDeck).suit = NULL;
+		(*ptrDeck).location = NULL;
+		ptrDeck++;
+	}
+	ptrDeck = ptrRoot;
+	if(ptrDeck != NULL)
+		delete[] ptrDeck;
+	ptrDeck = NULL;
+}
+
+/*
+* Deallocates a dynamically sized array of Players.
+* PARAM: *ptrPlayers - The pointer of the array of Players
+*/
+void deallocatePlayers(Player *ptrPlayers)
+{
+	Player *ptrRoot = ptrPlayers;
+	for (int i = 0; i < NUM_PLAYERS; i++)
+	{
+		if ((*ptrPlayers).name != NULL)
+			delete[] (*ptrPlayers).name;
+		if ((*ptrPlayers).id != NULL)
+			delete[] (*ptrPlayers).id;
+		(*ptrPlayers).name = NULL;
+		(*ptrPlayers).id = NULL;
+		ptrPlayers++;
+	}
+	ptrPlayers = ptrRoot;
+	if (ptrPlayers != NULL)
+		delete[] ptrPlayers;
+	ptrPlayers = NULL;
+}
+//	END GARBAGE COLLECTION FUNCTIONS
+
+
+
+//	FILE I/O FUNCTIONS
+/*
+* Loads an array of Cards from a file.
+* PARAM: *ptrDeck - The array of Cards to be loaded
+*	 *fileName - The name of the file to load
+* RETURN: True - File could be opened
+*	  False - File could not be opened
+*/
+bool loadDeck(Card *ptrDeck, char *fileName)
+{
+	ifstream ifs;
+	ifs.open(fileName);
+
+	char *suit = new char[8];
+	int rank;
+	if (ifs.is_open() == false)
+		return false;
+	else
+	{
+		for(int i = 0; i < NUM_CARDS; i++)
+		{
+			ifs >> suit;
+			ifs >> rank;
+			(*ptrDeck).rank = rank;
+			
+			//Deallocate and reallocate with proper size
+			if((*ptrDeck).suit != NULL)
+				delete[] (*ptrDeck).suit;
+			(*ptrDeck).suit = new char[strLength(suit)];
+			strCopy((*ptrDeck).suit, suit);
+			
+			//Deallocate and reallocate with proper size
+			if((*ptrDeck).location != NULL)
+				delete[] (*ptrDeck).location;
+			(*ptrDeck).location = new char[strLength("unshuffed")];
+			strCopy((*ptrDeck).location, "unshuffled");
+			*ptrDeck++;
+		}
+		ifs.close();
+		return true;
+	}
+	
+	delete[] suit;
+	suit = NULL;
+}//END loadDeck FUNCTION
+
+/*
+* Loads an array of Players from a file.
+* PARAM: *ptrPlayers - The array of Players to be loaded
+*	 *fileName - The name of the file to load
+* RETURN: True - File could be opened
+*	  False - File could not be opened
+*/
+bool loadPlayers(Player *ptrPlayers, char *fileName)
+{
+	ifstream ifs;
+	ifs.open(fileName);
+
+	char *name = new char[100];
+	int *ptrID = (*ptrPlayers).id;
+	char temp;
+	char tempSpace;
+
+	if (ifs.is_open() == false)
+		return false;
+	else
+	{
+		ifs >> temp;
+		for(int i = 0; i < NUM_PLAYERS; i++)
+		{
+			ifs >> name;
+			for (int j = 0; j < 5; j++)
+			{
+				ifs >> temp;
+				*ptrID = (temp) - '0'; //Converts character to integer and stores it into the ID"Pointer: "
+				ptrID++;
+			}
+			//Deallocate and reallocate with the new size.
+			if ((*ptrPlayers).name != NULL)
+				delete[] (*ptrPlayers).name;
+			(*ptrPlayers).name = new char[strLength(name)];
+			strCopy((*ptrPlayers).name, name);
+
+			ptrPlayers++;
+			ptrID = (*ptrPlayers).id;
+		}
+		ifs.close();
+		return true;
+	}
+
+	delete[] name;
+	name = NULL;
+}//END loadPlayers FUNCTION
+
+/*
+* Loads the amount of players from a file.
+* NOTE: Need to find more elegant solution to getting the player amount for initialization.
+*	Opening up another file stream seems wasteful.
+* PARAM: *fileName - The file name of the file to load
+* RETURN: True - File could be opened
+*	  False - File could not be opened
+*/
+bool loadPlayerAmount(char *fileName)
+{
+	ifstream ifs;
+	ifs.open(fileName);
+	
+	char temp;
+	
+	if(ifs.is_open() == false)
+		return false;
+	else
+	{
+		ifs >> temp; //First character is number of players
+		NUM_PLAYERS = (temp) - '0';
+		ifs.close();
+		return true;
+	}
+}
+//	END FILE I/O FUNCTIONS
+
+
+
+//	GAME FUNCTIONS
+/*
+* Shuffles an array of Cards into a new array of Cards
+* PARAM: *ptrShuffled - The new array of shuffled Cards
+*	 *ptrUnshuffled - The array of Cards
+*/
+void shuffleDeck(Card *ptrShuffled, Card *ptrUnshuffled)
+{
+	initDeck(ptrShuffled); //Prepares the deck to be shuffled
+	srand(time(NULL)); //Initializes random seed
+	int rng;
+	bool shuffleSuccess = false;
+	Card *rootShuffle = ptrShuffled;
+
+	//Traverse unshuffled deck
+	for(int i = 0; i < NUM_CARDS; i++)
+	{
+		while (shuffleSuccess == false)
+		{
+			rng = rand() % NUM_CARDS;
+			for(int j = 0; j < rng; j++) //Sets shuffled pointer to random index
+				ptrShuffled++;
+			if ((*ptrShuffled).rank == 0) //Copy card if shuffled index is empty
+			{
+				if((*ptrShuffled).location != NULL)
+					delete[] (*ptrShuffled).location;
+				(*ptrShuffled).location = new char[strLength("shuffled")];
+				cardCopy(ptrShuffled, ptrUnshuffled, "shuffled");
+				shuffleSuccess = true; //Go to next unshuffled card
+			}
+			ptrShuffled = rootShuffle; //Resets the pointer to be shifted again
+		}
+		shuffleSuccess = false;
+		ptrUnshuffled++;
+	}
+}//END shuffleDeck FUNCTIONS
+//	END GAME FUNCTIONS
+
+
+
+//	HELPER FUNCTIONS
+/*
+* Copies an array of characters.
+* PARAM: *ptrDest - The pointer of the destination character array
+*	 *ptrSource - The pointer of the source character array
+*/
+void strCopy(char *ptrDest, char *ptrSource)
+{
+	while( *ptrSource != '\0' )
+	{
+		*ptrDest = *ptrSource;
+		ptrDest++;
+		ptrSource++;
+	}
+	*ptrDest = '\0';
+}//END strCopy FUNCTION
+
+/*
+* Returns the length of a character array.
+* PARAM: *ptrString - The pointer of the character array.
+* RETURN: int - The length of the character array (null included). 
+*/
+int strLength(char *ptrString)
+{
+	int counter = 0;
+	while(*ptrString != '\0')
+	{
+		counter++;
+		ptrString++;
+	}
+	counter++; //Adds 1 for null character
+	return counter;
+}
+
+/*
+* Copies a card to a new location.
+* PARAM: *ptrDest - The pointer of the destination Card
+*	 *ptrSource - The pointer of the source Card
+*	 *location - The new location of the destination Card
+*/
+void cardCopy(Card *ptrDest, Card *ptrSource, char *location)
+{
+	(*ptrDest).rank = (*ptrSource).rank;
+	strCopy((*ptrDest).suit, (*ptrSource).suit);
+	strCopy((*ptrDest).location, location);
+}//END cardCopy FUNCTION
+
+/*
+* Copies a card.
+* PARAM: *ptrDest - The pointer of the destination Card
+*	 *ptrSource - The pointer of the source Card
+*/
+void cardCopy(Card *ptrDest, Card *ptrSource)
+{
+	cardCopy(ptrDest, ptrSource, (*ptrSource).location);
+}//END cardCopy FUNCTION
+//	END HELPER FUNCTIONS
+
+
+
+//	PRINT FUNCTIONS
+/*
+* Prints an array of Cards to the output stream.
+* PARAM: *ptrDeck - The pointer of the array of cards
+*/
+void printDeck(Card *ptrDeck)
+{
+	for(int i = 0; i < NUM_CARDS; i++)
+	{
+		cout << (*ptrDeck).rank << " " << (*ptrDeck).suit << " (" << (*ptrDeck).location << ")" << endl;
+		ptrDeck++;
+	}
+}//END printDeck FUNCTION
+
+/*
+* Prints an array of Players to the output stream.
+* PARAM: *ptrPlayers - The pointer of the array of Players
+*/
+void printPlayers(Player *ptrPlayers)
+{
+	int *ptrID = (*ptrPlayers).id;
+	for(int i = 0; i < NUM_PLAYERS; i++)
+	{
+		cout << (*ptrPlayers).name << " (";
+		for(int j = 0; j < 5; j++)
+		{
+			cout << *ptrID;
+			ptrID++;
+		}
+		cout << ")" << endl;
+		ptrPlayers++;
+		ptrID = (*ptrPlayers).id;
+	}
+}//END printPlayers FUNCTION
+//	END PRINT FUNCTIONS

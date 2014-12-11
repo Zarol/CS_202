@@ -1,0 +1,23 @@
+a.out:	Project11Main.o Card.o Player.o Stack.o List.o Queue.o Node.o
+		g++ -o a.out Project11Main.o Card.o Player.o Stack.o List.o Queue.o Node.o
+
+Project11Main.o:	Project11Main.cpp Card.h Player.h Stack.h List.h Queue.h Node.h
+		g++ -c Project11Main.cpp
+
+Card.o:	Card.cpp Card.h
+		g++ -c Card.cpp
+
+Player.o:	Player.cpp Player.h
+		g++ -c Player.cpp
+
+Stack.o:	Stack.cpp Stack.h
+		g++ -c Stack.cpp
+
+List.o:	List.cpp List.h Node.h
+		g++ -c List.cpp
+
+Queue.o:	Queue.cpp Queue.h Node.h
+		g++ -c Queue.cpp
+
+Node.o:	Node.cpp Node.h List.h Queue.h
+		g++ -c Node.cpp

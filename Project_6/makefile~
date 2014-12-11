@@ -1,0 +1,14 @@
+a.out:	Project6Main.o strLib.o Project6Classes.o
+		g++ -o a.out Project6Main.o strLib.o Project6Classes.o
+
+Project6.o:	Project6Main.cpp strLib.h Project6Classes.h
+		g++ -c Project6Main.cpp
+
+Project6Classes.o:	Project6Classes.cpp Project6Classes.h strLib.h
+		g++ -c Project6Classes.cpp
+
+strLib.o:	strLib.cpp strLib.h
+		g++ -c strLib.cpp
+
+clean:
+		rm *.o

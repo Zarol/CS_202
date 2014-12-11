@@ -1,0 +1,838 @@
+Script started on Wed 23 Apr 2014 11:13:31 PM PDT
+]0;skleips@ecc-d-09vm: ~/Desktop/Project_11_Askleips@ecc-d-09vm:~/Desktop/Project_11_A$ cmake ../Project_11/[K[K ../Project_11/[Kcmake ../Project_11/[K[K[3Plscd Desktop/Project_11[14Pman ftpgksu gedit /etc/ssmtp/ssmtp.confman ftp[Kcd Desktop/Project_11ls[Kcmake ../Project_11/[Kg++ Project11Main.cpp
+]0;skleips@ecc-d-09vm: ~/Desktop/Project_11_Askleips@ecc-d-09vm:~/Desktop/Project_11_A$ ./a.out
+Unshuffled Deck's File Name (100 MAX):
+unshuffled
+Number of Players (2-8):
+8
+Player File Name (100 MAX):
+players
+Saharath [99999]
+Nancy [12345]
+Mohammad [67891]
+Shubham [55555]
+Ernest [13579]
+Tyler [92229]
+Adam [14414]
+Charlie [87452]
+NOTE: Shuffle first, deal second.
+NOTE: You may shuffle more than once, doing other things more than once might break the program.
+*****************************
+*       CRAZY EIGHTS        *
+*****************************
+* 1. Print unshuffled deck. *
+* 2. Print shuffled deck.   *
+* 3. Print stock deck.      *
+* 4. Print discard deck.    *
+* 5. Print players.         *
+* 6. Print player's hands.  *
+* 7. Shuffle the deck.      *
+* 8. Deal deck.             *
+* 0. Quit                   *
+*****************************
+Enter a number: 1
+*****************************
+[0] club 1 unshuffled
+[1] club 2 unshuffled
+[2] club 3 unshuffled
+[3] club 4 unshuffled
+[4] club 5 unshuffled
+[5] club 6 unshuffled
+[6] club 7 unshuffled
+[7] club 8 unshuffled
+[8] club 9 unshuffled
+[9] club 10 unshuffled
+[10] club 11 unshuffled
+[11] club 12 unshuffled
+[12] club 13 unshuffled
+[13] diamond 1 unshuffled
+[14] diamond 2 unshuffled
+[15] diamond 3 unshuffled
+[16] diamond 4 unshuffled
+[17] diamond 5 unshuffled
+[18] diamond 6 unshuffled
+[19] diamond 7 unshuffled
+[20] diamond 8 unshuffled
+[21] diamond 9 unshuffled
+[22] diamond 10 unshuffled
+[23] diamond 11 unshuffled
+[24] diamond 12 unshuffled
+[25] diamond 13 unshuffled
+[26] heart 1 unshuffled
+[27] heart 2 unshuffled
+[28] heart 3 unshuffled
+[29] heart 4 unshuffled
+[30] heart 5 unshuffled
+[31] heart 6 unshuffled
+[32] heart 7 unshuffled
+[33] heart 8 unshuffled
+[34] heart 9 unshuffled
+[35] heart 10 unshuffled
+[36] heart 11 unshuffled
+[37] heart 12 unshuffled
+[38] heart 13 unshuffled
+[39] ace 1 unshuffled
+[40] ace 2 unshuffled
+[41] ace 3 unshuffled
+[42] ace 4 unshuffled
+[43] ace 5 unshuffled
+[44] ace 6 unshuffled
+[45] ace 7 unshuffled
+[46] ace 8 unshuffled
+[47] ace 9 unshuffled
+[48] ace 10 unshuffled
+[49] ace 11 unshuffled
+[50] ace 12 unshuffled
+[51] ace 13 unshuffled
+*****************************
+*       CRAZY EIGHTS        *
+*****************************
+* 1. Print unshuffled deck. *
+* 2. Print shuffled deck.   *
+* 3. Print stock deck.      *
+* 4. Print discard deck.    *
+* 5. Print players.         *
+* 6. Print player's hands.  *
+* 7. Shuffle the deck.      *
+* 8. Deal deck.             *
+* 0. Quit                   *
+*****************************
+Enter a number: 2
+*****************************
+[0] club 1 shuffled
+[1] club 2 shuffled
+[2] club 3 shuffled
+[3] club 4 shuffled
+[4] club 5 shuffled
+[5] club 6 shuffled
+[6] club 7 shuffled
+[7] club 8 shuffled
+[8] club 9 shuffled
+[9] club 10 shuffled
+[10] club 11 shuffled
+[11] club 12 shuffled
+[12] club 13 shuffled
+[13] diamond 1 shuffled
+[14] diamond 2 shuffled
+[15] diamond 3 shuffled
+[16] diamond 4 shuffled
+[17] diamond 5 shuffled
+[18] diamond 6 shuffled
+[19] diamond 7 shuffled
+[20] diamond 8 shuffled
+[21] diamond 9 shuffled
+[22] diamond 10 shuffled
+[23] diamond 11 shuffled
+[24] diamond 12 shuffled
+[25] diamond 13 shuffled
+[26] heart 1 shuffled
+[27] heart 2 shuffled
+[28] heart 3 shuffled
+[29] heart 4 shuffled
+[30] heart 5 shuffled
+[31] heart 6 shuffled
+[32] heart 7 shuffled
+[33] heart 8 shuffled
+[34] heart 9 shuffled
+[35] heart 10 shuffled
+[36] heart 11 shuffled
+[37] heart 12 shuffled
+[38] heart 13 shuffled
+[39] ace 1 shuffled
+[40] ace 2 shuffled
+[41] ace 3 shuffled
+[42] ace 4 shuffled
+[43] ace 5 shuffled
+[44] ace 6 shuffled
+[45] ace 7 shuffled
+[46] ace 8 shuffled
+[47] ace 9 shuffled
+[48] ace 10 shuffled
+[49] ace 11 shuffled
+[50] ace 12 shuffled
+[51] ace 13 shuffled
+*****************************
+*       CRAZY EIGHTS        *
+*****************************
+* 1. Print unshuffled deck. *
+* 2. Print shuffled deck.   *
+* 3. Print stock deck.      *
+* 4. Print discard deck.    *
+* 5. Print players.         *
+* 6. Print player's hands.  *
+* 7. Shuffle the deck.      *
+* 8. Deal deck.             *
+* 0. Quit                   *
+*****************************
+Enter a number: 3
+*****************************
+*****************************
+*       CRAZY EIGHTS        *
+*****************************
+* 1. Print unshuffled deck. *
+* 2. Print shuffled deck.   *
+* 3. Print stock deck.      *
+* 4. Print discard deck.    *
+* 5. Print players.         *
+* 6. Print player's hands.  *
+* 7. Shuffle the deck.      *
+* 8. Deal deck.             *
+* 0. Quit                   *
+*****************************
+Enter a number: 4
+*****************************
+*****************************
+*       CRAZY EIGHTS        *
+*****************************
+* 1. Print unshuffled deck. *
+* 2. Print shuffled deck.   *
+* 3. Print stock deck.      *
+* 4. Print discard deck.    *
+* 5. Print players.         *
+* 6. Print player's hands.  *
+* 7. Shuffle the deck.      *
+* 8. Deal deck.             *
+* 0. Quit                   *
+*****************************
+Enter a number: 5
+*****************************
+[0] Saharath [99999]
+[1] Nancy [12345]
+[2] Mohammad [67891]
+[3] Shubham [55555]
+[4] Ernest [13579]
+[5] Tyler [92229]
+[6] Adam [14414]
+[7] Charlie [87452]
+*****************************
+*       CRAZY EIGHTS        *
+*****************************
+* 1. Print unshuffled deck. *
+* 2. Print shuffled deck.   *
+* 3. Print stock deck.      *
+* 4. Print discard deck.    *
+* 5. Print players.         *
+* 6. Print player's hands.  *
+* 7. Shuffle the deck.      *
+* 8. Deal deck.             *
+* 0. Quit                   *
+*****************************
+Enter a number: 6
+*****************************
+Saharath [99999]
+Nancy [12345]
+Mohammad [67891]
+Shubham [55555]
+Ernest [13579]
+Tyler [92229]
+Adam [14414]
+Charlie [87452]
+*****************************
+*       CRAZY EIGHTS        *
+*****************************
+* 1. Print unshuffled deck. *
+* 2. Print shuffled deck.   *
+* 3. Print stock deck.      *
+* 4. Print discard deck.    *
+* 5. Print players.         *
+* 6. Print player's hands.  *
+* 7. Shuffle the deck.      *
+* 8. Deal deck.             *
+* 0. Quit                   *
+*****************************
+Enter a number: 7
+*****************************
+Shuffle success.
+*****************************
+*       CRAZY EIGHTS        *
+*****************************
+* 1. Print unshuffled deck. *
+* 2. Print shuffled deck.   *
+* 3. Print stock deck.      *
+* 4. Print discard deck.    *
+* 5. Print players.         *
+* 6. Print player's hands.  *
+* 7. Shuffle the deck.      *
+* 8. Deal deck.             *
+* 0. Quit                   *
+*****************************
+Enter a number: 2
+*****************************
+[0] club 1 shuffled
+[1] ace 8 shuffled
+[2] club 4 shuffled
+[3] club 6 shuffled
+[4] diamond 7 shuffled
+[5] heart 6 shuffled
+[6] club 12 shuffled
+[7] club 11 shuffled
+[8] ace 3 shuffled
+[9] diamond 3 shuffled
+[10] diamond 5 shuffled
+[11] heart 8 shuffled
+[12] diamond 10 shuffled
+[13] diamond 2 shuffled
+[14] ace 13 shuffled
+[15] heart 11 shuffled
+[16] club 2 shuffled
+[17] diamond 4 shuffled
+[18] ace 6 shuffled
+[19] club 7 shuffled
+[20] diamond 1 shuffled
+[21] heart 13 shuffled
+[22] ace 7 shuffled
+[23] heart 1 shuffled
+[24] ace 4 shuffled
+[25] heart 3 shuffled
+[26] heart 9 shuffled
+[27] ace 12 shuffled
+[28] ace 11 shuffled
+[29] heart 2 shuffled
+[30] heart 4 shuffled
+[31] club 9 shuffled
+[32] club 8 shuffled
+[33] club 5 shuffled
+[34] ace 9 shuffled
+[35] diamond 8 shuffled
+[36] diamond 13 shuffled
+[37] club 10 shuffled
+[38] heart 10 shuffled
+[39] diamond 11 shuffled
+[40] diamond 6 shuffled
+[41] heart 12 shuffled
+[42] ace 5 shuffled
+[43] club 3 shuffled
+[44] ace 1 shuffled
+[45] ace 2 shuffled
+[46] diamond 12 shuffled
+[47] club 13 shuffled
+[48] heart 5 shuffled
+[49] diamond 9 shuffled
+[50] heart 7 shuffled
+[51] ace 10 shuffled
+*****************************
+*       CRAZY EIGHTS        *
+*****************************
+* 1. Print unshuffled deck. *
+* 2. Print shuffled deck.   *
+* 3. Print stock deck.      *
+* 4. Print discard deck.    *
+* 5. Print players.         *
+* 6. Print player's hands.  *
+* 7. Shuffle the deck.      *
+* 8. Deal deck.             *
+* 0. Quit                   *
+*****************************
+Enter a number: 3
+*****************************
+[0] club 1 stock
+[1] ace 8 stock
+[2] club 4 stock
+[3] club 6 stock
+[4] diamond 7 stock
+[5] heart 6 stock
+[6] club 12 stock
+[7] club 11 stock
+[8] ace 3 stock
+[9] diamond 3 stock
+[10] diamond 5 stock
+[11] heart 8 stock
+[12] diamond 10 stock
+[13] diamond 2 stock
+[14] ace 13 stock
+[15] heart 11 stock
+[16] club 2 stock
+[17] diamond 4 stock
+[18] ace 6 stock
+[19] club 7 stock
+[20] diamond 1 stock
+[21] heart 13 stock
+[22] ace 7 stock
+[23] heart 1 stock
+[24] ace 4 stock
+[25] heart 3 stock
+[26] heart 9 stock
+[27] ace 12 stock
+[28] ace 11 stock
+[29] heart 2 stock
+[30] heart 4 stock
+[31] club 9 stock
+[32] club 8 stock
+[33] club 5 stock
+[34] ace 9 stock
+[35] diamond 8 stock
+[36] diamond 13 stock
+[37] club 10 stock
+[38] heart 10 stock
+[39] diamond 11 stock
+[40] diamond 6 stock
+[41] heart 12 stock
+[42] ace 5 stock
+[43] club 3 stock
+[44] ace 1 stock
+[45] ace 2 stock
+[46] diamond 12 stock
+[47] club 13 stock
+[48] heart 5 stock
+[49] diamond 9 stock
+[50] heart 7 stock
+[51] ace 10 stock
+*****************************
+*       CRAZY EIGHTS        *
+*****************************
+* 1. Print unshuffled deck. *
+* 2. Print shuffled deck.   *
+* 3. Print stock deck.      *
+* 4. Print discard deck.    *
+* 5. Print players.         *
+* 6. Print player's hands.  *
+* 7. Shuffle the deck.      *
+* 8. Deal deck.             *
+* 0. Quit                   *
+*****************************
+Enter a number: 8
+*****************************
+Deal success.
+*****************************
+*       CRAZY EIGHTS        *
+*****************************
+* 1. Print unshuffled deck. *
+* 2. Print shuffled deck.   *
+* 3. Print stock deck.      *
+* 4. Print discard deck.    *
+* 5. Print players.         *
+* 6. Print player's hands.  *
+* 7. Shuffle the deck.      *
+* 8. Deal deck.             *
+* 0. Quit                   *
+*****************************
+Enter a number: 3
+*****************************
+[0] club 1 stock
+[1] ace 8 stock
+[2] club 4 stock
+[3] club 6 stock
+[4] diamond 7 stock
+[5] heart 6 stock
+[6] club 12 stock
+[7] club 11 stock
+[8] ace 3 stock
+[9] diamond 3 stock
+[10] diamond 5 stock
+*****************************
+*       CRAZY EIGHTS        *
+*****************************
+* 1. Print unshuffled deck. *
+* 2. Print shuffled deck.   *
+* 3. Print stock deck.      *
+* 4. Print discard deck.    *
+* 5. Print players.         *
+* 6. Print player's hands.  *
+* 7. Shuffle the deck.      *
+* 8. Deal deck.             *
+* 0. Quit                   *
+*****************************
+Enter a number: 4
+*****************************
+[0] heart 8 discard
+*****************************
+*       CRAZY EIGHTS        *
+*****************************
+* 1. Print unshuffled deck. *
+* 2. Print shuffled deck.   *
+* 3. Print stock deck.      *
+* 4. Print discard deck.    *
+* 5. Print players.         *
+* 6. Print player's hands.  *
+* 7. Shuffle the deck.      *
+* 8. Deal deck.             *
+* 0. Quit                   *
+*****************************
+Enter a number: 6
+*****************************
+Saharath [99999]
+[0] ace 10 Saharath
+[1] club 3 Saharath
+[2] diamond 8 Saharath
+[3] ace 12 Saharath
+[4] club 7 Saharath
+Nancy [12345]
+[0] heart 7 Nancy
+[1] ace 5 Nancy
+[2] ace 9 Nancy
+[3] heart 9 Nancy
+[4] ace 6 Nancy
+Mohammad [67891]
+[0] diamond 9 Mohammad
+[1] heart 12 Mohammad
+[2] club 5 Mohammad
+[3] heart 3 Mohammad
+[4] diamond 4 Mohammad
+Shubham [55555]
+[0] heart 5 Shubham
+[1] diamond 6 Shubham
+[2] club 8 Shubham
+[3] ace 4 Shubham
+[4] club 2 Shubham
+Ernest [13579]
+[0] club 13 Ernest
+[1] diamond 11 Ernest
+[2] club 9 Ernest
+[3] heart 1 Ernest
+[4] heart 11 Ernest
+Tyler [92229]
+[0] diamond 12 Tyler
+[1] heart 10 Tyler
+[2] heart 4 Tyler
+[3] ace 7 Tyler
+[4] ace 13 Tyler
+Adam [14414]
+[0] ace 2 Adam
+[1] club 10 Adam
+[2] heart 2 Adam
+[3] heart 13 Adam
+[4] diamond 2 Adam
+Charlie [87452]
+[0] ace 1 Charlie
+[1] diamond 13 Charlie
+[2] ace 11 Charlie
+[3] diamond 1 Charlie
+[4] diamond 10 Charlie
+*****************************
+*       CRAZY EIGHTS        *
+*****************************
+* 1. Print unshuffled deck. *
+* 2. Print shuffled deck.   *
+* 3. Print stock deck.      *
+* 4. Print discard deck.    *
+* 5. Print players.         *
+* 6. Print player's hands.  *
+* 7. Shuffle the deck.      *
+* 8. Deal deck.             *
+* 0. Quit                   *
+*****************************
+Enter a number: 0
+*****************************
+Goodbye!
+]0;skleips@ecc-d-09vm: ~/Desktop/Project_11_Askleips@ecc-d-09vm:~/Desktop/Project_11_A$ ./a.outg++ Project11Main.cpp[14P./a.out
+Unshuffled Deck's File Name (100 MAX):
+unshuffled
+Number of Players (2-8):
+8 5
+Player File Name (100 MAX):
+players
+Saharath [99999]
+Nancy [12345]
+Mohammad [67891]
+Shubham [55555]
+Ernest [13579]
+NOTE: Shuffle first, deal second.
+NOTE: You may shuffle more than once, doing other things more than once might break the program.
+*****************************
+*       CRAZY EIGHTS        *
+*****************************
+* 1. Print unshuffled deck. *
+* 2. Print shuffled deck.   *
+* 3. Print stock deck.      *
+* 4. Print discard deck.    *
+* 5. Print players.         *
+* 6. Print player's hands.  *
+* 7. Shuffle the deck.      *
+* 8. Deal deck.             *
+* 0. Quit                   *
+*****************************
+Enter a number: 1
+*****************************
+[0] club 1 unshuffled
+[1] club 2 unshuffled
+[2] club 3 unshuffled
+[3] club 4 unshuffled
+[4] club 5 unshuffled
+[5] club 6 unshuffled
+[6] club 7 unshuffled
+[7] club 8 unshuffled
+[8] club 9 unshuffled
+[9] club 10 unshuffled
+[10] club 11 unshuffled
+[11] club 12 unshuffled
+[12] club 13 unshuffled
+[13] diamond 1 unshuffled
+[14] diamond 2 unshuffled
+[15] diamond 3 unshuffled
+[16] diamond 4 unshuffled
+[17] diamond 5 unshuffled
+[18] diamond 6 unshuffled
+[19] diamond 7 unshuffled
+[20] diamond 8 unshuffled
+[21] diamond 9 unshuffled
+[22] diamond 10 unshuffled
+[23] diamond 11 unshuffled
+[24] diamond 12 unshuffled
+[25] diamond 13 unshuffled
+[26] heart 1 unshuffled
+[27] heart 2 unshuffled
+[28] heart 3 unshuffled
+[29] heart 4 unshuffled
+[30] heart 5 unshuffled
+[31] heart 6 unshuffled
+[32] heart 7 unshuffled
+[33] heart 8 unshuffled
+[34] heart 9 unshuffled
+[35] heart 10 unshuffled
+[36] heart 11 unshuffled
+[37] heart 12 unshuffled
+[38] heart 13 unshuffled
+[39] ace 1 unshuffled
+[40] ace 2 unshuffled
+[41] ace 3 unshuffled
+[42] ace 4 unshuffled
+[43] ace 5 unshuffled
+[44] ace 6 unshuffled
+[45] ace 7 unshuffled
+[46] ace 8 unshuffled
+[47] ace 9 unshuffled
+[48] ace 10 unshuffled
+[49] ace 11 unshuffled
+[50] ace 12 unshuffled
+[51] ace 13 unshuffled
+*****************************
+*       CRAZY EIGHTS        *
+*****************************
+* 1. Print unshuffled deck. *
+* 2. Print shuffled deck.   *
+* 3. Print stock deck.      *
+* 4. Print discard deck.    *
+* 5. Print players.         *
+* 6. Print player's hands.  *
+* 7. Shuffle the deck.      *
+* 8. Deal deck.             *
+* 0. Quit                   *
+*****************************
+Enter a number: 7
+*****************************
+Shuffle success.
+*****************************
+*       CRAZY EIGHTS        *
+*****************************
+* 1. Print unshuffled deck. *
+* 2. Print shuffled deck.   *
+* 3. Print stock deck.      *
+* 4. Print discard deck.    *
+* 5. Print players.         *
+* 6. Print player's hands.  *
+* 7. Shuffle the deck.      *
+* 8. Deal deck.             *
+* 0. Quit                   *
+*****************************
+Enter a number: 8
+*****************************
+Deal success.
+*****************************
+*       CRAZY EIGHTS        *
+*****************************
+* 1. Print unshuffled deck. *
+* 2. Print shuffled deck.   *
+* 3. Print stock deck.      *
+* 4. Print discard deck.    *
+* 5. Print players.         *
+* 6. Print player's hands.  *
+* 7. Shuffle the deck.      *
+* 8. Deal deck.             *
+* 0. Quit                   *
+*****************************
+Enter a number: 2
+*****************************
+[0] diamond 8 shuffled
+[1] diamond 5 shuffled
+[2] ace 4 shuffled
+[3] heart 6 shuffled
+[4] ace 11 shuffled
+[5] heart 10 shuffled
+[6] ace 1 shuffled
+[7] diamond 11 shuffled
+[8] club 12 shuffled
+[9] diamond 7 shuffled
+[10] ace 5 shuffled
+[11] diamond 10 shuffled
+[12] diamond 1 shuffled
+[13] heart 9 shuffled
+[14] ace 9 shuffled
+[15] ace 6 shuffled
+[16] heart 1 shuffled
+[17] club 1 shuffled
+[18] ace 13 shuffled
+[19] club 10 shuffled
+[20] diamond 2 shuffled
+[21] club 4 shuffled
+[22] heart 4 shuffled
+[23] ace 7 shuffled
+[24] diamond 4 shuffled
+[25] diamond 3 shuffled
+[26] diamond 13 shuffled
+[27] club 8 shuffled
+[28] heart 11 shuffled
+[29] diamond 6 shuffled
+[30] diamond 9 shuffled
+[31] club 2 shuffled
+[32] heart 7 shuffled
+[33] ace 8 shuffled
+[34] ace 10 shuffled
+[35] club 9 shuffled
+[36] ace 2 shuffled
+[37] heart 12 shuffled
+[38] ace 3 shuffled
+[39] club 11 shuffled
+[40] heart 5 shuffled
+[41] club 7 shuffled
+[42] club 3 shuffled
+[43] heart 3 shuffled
+[44] diamond 12 shuffled
+[45] club 5 shuffled
+[46] ace 12 shuffled
+[47] heart 8 shuffled
+[48] club 6 shuffled
+[49] heart 2 shuffled
+[50] heart 13 shuffled
+[51] club 13 shuffled
+*****************************
+*       CRAZY EIGHTS        *
+*****************************
+* 1. Print unshuffled deck. *
+* 2. Print shuffled deck.   *
+* 3. Print stock deck.      *
+* 4. Print discard deck.    *
+* 5. Print players.         *
+* 6. Print player's hands.  *
+* 7. Shuffle the deck.      *
+* 8. Deal deck.             *
+* 0. Quit                   *
+*****************************
+Enter a number: 3
+*****************************
+[0] diamond 8 stock
+[1] diamond 5 stock
+[2] ace 4 stock
+[3] heart 6 stock
+[4] ace 11 stock
+[5] heart 10 stock
+[6] ace 1 stock
+[7] diamond 11 stock
+[8] club 12 stock
+[9] diamond 7 stock
+[10] ace 5 stock
+[11] diamond 10 stock
+[12] diamond 1 stock
+[13] heart 9 stock
+[14] ace 9 stock
+[15] ace 6 stock
+[16] heart 1 stock
+[17] club 1 stock
+[18] ace 13 stock
+[19] club 10 stock
+[20] diamond 2 stock
+[21] club 4 stock
+[22] heart 4 stock
+[23] ace 7 stock
+[24] diamond 4 stock
+[25] diamond 3 stock
+*****************************
+*       CRAZY EIGHTS        *
+*****************************
+* 1. Print unshuffled deck. *
+* 2. Print shuffled deck.   *
+* 3. Print stock deck.      *
+* 4. Print discard deck.    *
+* 5. Print players.         *
+* 6. Print player's hands.  *
+* 7. Shuffle the deck.      *
+* 8. Deal deck.             *
+* 0. Quit                   *
+*****************************
+Enter a number: 4
+*****************************
+[0] diamond 13 discard
+*****************************
+*       CRAZY EIGHTS        *
+*****************************
+* 1. Print unshuffled deck. *
+* 2. Print shuffled deck.   *
+* 3. Print stock deck.      *
+* 4. Print discard deck.    *
+* 5. Print players.         *
+* 6. Print player's hands.  *
+* 7. Shuffle the deck.      *
+* 8. Deal deck.             *
+* 0. Quit                   *
+*****************************
+Enter a number: 5
+*****************************
+[0] Saharath [99999]
+[1] Nancy [12345]
+[2] Mohammad [67891]
+[3] Shubham [55555]
+[4] Ernest [13579]
+*****************************
+*       CRAZY EIGHTS        *
+*****************************
+* 1. Print unshuffled deck. *
+* 2. Print shuffled deck.   *
+* 3. Print stock deck.      *
+* 4. Print discard deck.    *
+* 5. Print players.         *
+* 6. Print player's hands.  *
+* 7. Shuffle the deck.      *
+* 8. Deal deck.             *
+* 0. Quit                   *
+*****************************
+Enter a number: 6
+*****************************
+Saharath [99999]
+[0] club 13 Saharath
+[1] ace 12 Saharath
+[2] club 7 Saharath
+[3] ace 2 Saharath
+[4] club 2 Saharath
+Nancy [12345]
+[0] heart 13 Nancy
+[1] club 5 Nancy
+[2] heart 5 Nancy
+[3] club 9 Nancy
+[4] diamond 9 Nancy
+Mohammad [67891]
+[0] heart 2 Mohammad
+[1] diamond 12 Mohammad
+[2] club 11 Mohammad
+[3] ace 10 Mohammad
+[4] diamond 6 Mohammad
+Shubham [55555]
+[0] club 6 Shubham
+[1] heart 3 Shubham
+[2] ace 3 Shubham
+[3] ace 8 Shubham
+[4] heart 11 Shubham
+Ernest [13579]
+[0] heart 8 Ernest
+[1] club 3 Ernest
+[2] heart 12 Ernest
+[3] heart 7 Ernest
+[4] club 8 Ernest
+*****************************
+*       CRAZY EIGHTS        *
+*****************************
+* 1. Print unshuffled deck. *
+* 2. Print shuffled deck.   *
+* 3. Print stock deck.      *
+* 4. Print discard deck.    *
+* 5. Print players.         *
+* 6. Print player's hands.  *
+* 7. Shuffle the deck.      *
+* 8. Deal deck.             *
+* 0. Quit                   *
+*****************************
+Enter a number: 8 0
+*****************************
+Goodbye!
+]0;skleips@ecc-d-09vm: ~/Desktop/Project_11_Askleips@ecc-d-09vm:~/Desktop/Project_11_A$ exit
+exit
+
+Script done on Wed 23 Apr 2014 11:15:08 PM PDT

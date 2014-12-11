@@ -1,0 +1,312 @@
+/*
+* PROGRAM: CS 202 Project 8
+* AUTHOR: Saharath Kleips
+* DATE: 04/01/2014
+* PURPOSE: To recreate the basic structure of the Crazy Eights game with overloaded operators, offset notation, and strings.
+*/
+
+#include <stdlib.h>
+#include <iostream>
+#include <fstream>
+#include <cstring>
+#include "Project8Classes.h"
+using namespace std;
+
+//START Player FUNCTIONS
+
+/*
+* Default Constructor for class Player.
+*/
+Player::Player()
+{
+	name = "name";
+	id = new int[5];
+	for(int i = 0; i < 5; i++)
+		id[i] = 0;
+	hand = new Card[5];
+}//END Constructor FUNCTION
+
+/*
+* Destructor for class Player.
+*/
+Player::~Player()
+{
+	if(id != NULL)
+		delete[] id;
+	id = NULL;
+	if(hand != NULL)
+		delete[] hand;
+	hand = NULL;
+}//END Destructor FUNCTION
+
+/*
+* Sets the name of a player.
+* @PARAM: string - The new name of the player.
+* @RETURN: bool - The player name is valid or invalid.
+*/
+bool Player::setName(string newName)
+{
+	name = newName;
+	return true;
+}//END setName FUNCTION
+
+/*
+* Returns the name of the player.
+* @RETURN: string - The player's name.
+*/
+string Player::getName() const
+{
+	return name;
+}//END getName FUNCTION
+
+/*
+* Sets the ID of a player.
+* @PARAM: int* - The new ID of the player.
+* @RETURN: bool - The player ID is valid or invalid.
+*/
+bool Player::setID(int *newID)
+{
+	for(int i = 0; i < 5; i++)
+		id[i] = newID[i];
+	return true;
+}//END setID FUNCTION
+
+/*
+* Returns the ID of the player.
+* @RETURN: int* - A pointer to an array of integers of the player's ID.
+*/
+int* Player::getID() const
+{
+	return id;
+}//END getID FUNCTION
+
+/*
+* Sets the hand of a player.
+* @PARAM: Card* - The new hand of the player.
+* @RETURN: bool - The hand is valid or invalid.
+*/
+bool Player::setHand(Card* newHand)
+{
+	for(int i = 0; i < 5; i++)
+		hand[i] = newHand[i];
+	return true;
+}//END setHand FUNCTION
+
+/*
+* Returns the hand of the player.
+* @RETURN: Card* - A pointer to the player's hand.
+*/
+Card* Player::getHand() const
+{
+	return hand;
+}//END getHand FUNCTION
+
+/*
+* Overloaded >> operator for Player.
+* @PARAM: ifstream& - ifstream to be overloaded.
+* 	  Player& - The player to be extracted.
+* @RETURN: ifstream& - Overloaded ifstream.
+*/
+ifstream& operator>>(ifstream& ifs, Player& sourcePlayer)
+{
+	char temp;
+	ifs >> sourcePlayer.name;
+	for(int i = 0; i < 5; i++)
+	{
+		ifs >> temp;
+		sourcePlayer.id[i] = temp - '0';
+	}	
+	return ifs;
+}//END operator>> FUNCTION
+
+/*
+* Overloaded << operator for Player.
+* @PARAM: ostream& - ostream to be overloaded.
+*	  Player& - The player to be outputted.
+* @RETURN: ostream& - Overloaded ostream.
+*/
+ostream& operator<<(ostream& os, Player& sourcePlayer)
+{
+	os << sourcePlayer.name;
+	os << " [";
+	for(int i = 0; i < 5; i++)
+		os << sourcePlayer.id[i];
+	os << "]";
+	return os;
+}//END operator<< FUNCTION
+//END Player FUNCTIONS
+
+//START Card FUNCTIONS
+
+/*
+* Default Constructor for class Card.
+*/
+Card::Card()
+{
+	suit = "suit";
+	rank = 0;
+	location = "location";
+}//END Constructor FUNCTION
+
+/*
+* Parameterized Constructor for class Card.
+* @PARAM: string - The suit of the Card.
+*	  int - The rank of the Card.
+*	  string - The location of the Card.
+*/
+Card::Card(string newSuit, int newRank, string newLocation)
+{
+	suit = newSuit;
+	rank = newRank;
+	location = newLocation;
+}//END Constructor FUNCTION
+
+/*
+* Copy Constructor for class Card.
+* @PARAM: const Card& - The card to be copied.
+*/
+Card::Card(const Card& newCard)
+{
+	suit = newCard.suit;
+	rank = newCard.rank;
+	location = newCard.location;
+}//END Constructor FUNCTION
+
+/*
+* Destructor for class Card.
+*/
+Card::~Card()
+{
+	//NOTE: The destructor shouldn't be necessary. But it was included per-requirements.
+	//Data values are only strings and ints. Nothing dynamically allocated.
+}//END Destructor for class Card
+
+/*
+* Sets the suit of a card.
+* @PARAM: string - The new suit of the card.
+* @RETURN: bool - The suit is valid or invalid.
+*/
+bool Card::setSuit(string newSuit)
+{
+	suit = newSuit;
+	return true;
+}//END setSuit FUNCTION
+
+/*
+* Returns the suit of a card.
+* @RETURN: string - The card's suit.
+*/
+string Card::getSuit() const
+{
+	return suit;
+}//END getSuit FUNCTION
+
+/*
+* Sets the rank of a card.
+* @PARAM: int - The new rank of the card.
+* @RETURN: bool - The rank is valid or invalid.
+*/
+bool Card::setRank(int newRank)
+{
+	if(newRank > 0 && newRank < 14)
+	{
+		rank = newRank;
+		return true;
+	}
+	else
+		return false;
+}//END setRank FUNCTION
+
+/*
+* Returns the rank of the card.
+* @RETURN: int - The rank of the card.
+*/
+int Card::getRank() const
+{
+	return rank;
+}//END getRank FUNCTION
+
+/*
+* Sets the location of the card.
+* @PARAM: string - The new location of the card.
+* @RETURN: bool - The location is valid or invalid.
+*/
+bool Card::setLocation(string newLocation)
+{
+	location = newLocation;
+	return true;
+}//END setLocation FUNCTION
+
+/*
+* Returns the location of the card.
+* @RETURN: char* - A pointer to a c-style string of the card's location.
+*/
+string Card::getLocation() const
+{
+	return location;
+}//END getLocation FUNCTION
+
+void Card::reset()
+{
+	suit = "suit";
+	rank = 0;
+	location = "location";
+}
+
+Card Card::operator=(const Card& sourceCard)
+{
+	suit = sourceCard.suit;
+	rank = sourceCard.rank;
+	location = sourceCard.location;
+	return *this;
+}
+
+bool Card::operator>(const Card& sourceCard) const
+{
+	if(rank > sourceCard.rank)
+		return true;
+	else
+		return false;
+}
+
+bool Card::operator<(const Card& sourceCard) const
+{ 
+	if(rank < sourceCard.rank)
+		return true;
+	else
+		return false;
+}
+
+bool operator>=(const Card& sourceCard, const Card& compareCard)
+{
+	if(sourceCard.rank >= compareCard.rank)
+		return true;
+	else
+		return false;
+}
+
+bool operator<=(const Card& sourceCard, const Card& compareCard)
+{
+	if(sourceCard.rank <= compareCard.rank)
+		return true;
+	else
+		return false;
+}
+
+ifstream& operator>>(ifstream& ifs, Card& destCard)
+{
+	ifs >> destCard.suit;
+	ifs >> destCard.rank;
+	return ifs;
+}
+
+ostream& operator<<(ostream& os, Card& sourceCard)
+{
+	os << sourceCard.suit;
+	os << " ";
+	os << sourceCard.rank;
+	os << " ";
+	os << sourceCard.location;
+	return os;
+}
+//END Card FUNCTIONS

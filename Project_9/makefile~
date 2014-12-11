@@ -1,0 +1,11 @@
+a.out:	main.o Queue1.o
+		g++ -o a.out main.o Queue1.o
+
+main.o:	main.cpp Queue.h
+		g++ -c main.cpp
+
+Queue1.o:	Queue1.cpp Queue.h
+		g++ -c Queue1.cpp
+
+clean:
+		rm *.o
